@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    margin-top: 80px;
+    font-family: BauerBodoniLight,Arial,Sans-Serif;
+    color: #3F3F3F;
+
+}
+.content{
+    width: 80%;
+    margin: auto;
+    font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+    color: #3F3F3F;
+    line-height: 28px;
+
+}
+.content2{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    line-height: 24px;
+    font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+    color: #3F3F3F;
+
+
+}

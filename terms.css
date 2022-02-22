@@ -1,0 +1,21 @@
+.content{
+    width: 80%;
+    margin: auto;
+    color: #3F3F3F;
+
+}
+p{
+    margin-top: 40px;
+    font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+    color: #3F3F3F;
+
+
+}
+p b {
+    margin-top: 50px;
+}
+h1{
+    color: #3F3F3F;
+
+}
+

@@ -1,0 +1,14 @@
+h1{
+    font-size: 2rem;
+    margin-top: 90px;
+    text-align: center;
+    color: #3F3F3F;
+
+}
+.content{
+    width:80%;
+    font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+    color: #3F3F3F;
+    margin:auto;
+    line-height: 28px;
+}
