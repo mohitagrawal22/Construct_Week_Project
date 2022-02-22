@@ -7,3 +7,12 @@ h1{
     margin: auto;
     margin-top: 50px;
 }
+#content{
+    width: 80%;
+    font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+    color: #222;
+    margin: auto;
+    line-height: 28px;
+}
+
+/* span: text-decoration :underline font-weigth:bold */
