@@ -59,6 +59,9 @@
     padding:1%;
 
   }
+  .flag {
+    margin-right: -25px;
+  }
   div a{
      text-decoration:none;
       color:black;
