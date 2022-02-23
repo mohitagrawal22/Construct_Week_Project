@@ -16,7 +16,7 @@ h1{
 
 /* footer */
 #container{
-    margin-top: 150px;
+    margin-top: 60px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 31% 31% 60%;

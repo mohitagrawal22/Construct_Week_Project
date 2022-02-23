@@ -1,19 +1,32 @@
-P{
-    text-align: center;
+img{
+    width: 80%;
     margin: auto;
-    margin-top: 80px;
-    font-size: 40px;
+    display: block;
+    margin-top: 150px;
     font-family: BauerBodoniLight,Arial,Sans-Serif;
-    
+    color: #222;
+    text-transform: uppercase;
 }
-.two{
+h1{
     text-align: center;
-    font-size: 20px;
+    font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
     color: #3F3F3F;
 }
-/* footer  */
+
+p{
+    width: 85%;
+    /* text-align: center; */
+    margin: auto;
+font-size: 20px;
+line-height: 28px;
+    font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+    color: #3F3F3F;
+}
+
+/* footer */
+
 #container{
-    margin-top: 50px;
+    margin-top: 10px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 31% 31% 60%;

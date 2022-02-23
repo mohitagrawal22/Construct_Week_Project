@@ -27,6 +27,7 @@ h1{
 
 
 #container{
+    margin-top: 100px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 31% 31% 60%;
