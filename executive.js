@@ -18,7 +18,6 @@ name:"BRYAN WAYDA",role:"Chief Supply & Service Officer"},
 name:"Jessica Raefield",role:"Chief Human Resources Officer"},
 {image:"https://www.rodanandfields.com/en-us/medias/8-exec-720x720-Marjorie-after.jpg?context=bWFzdGVyfHJvb3R8ODI0MTZ8aW1hZ2UvanBlZ3xoYTgvaDM4LzEzMjg1MDE3OTExMzI2LmpwZ3wzNTJiNTkyZWQwYzgxNTI2ZGI2MzgxYmQxNGZiYTFlNjdlMDRlZmY3YTg5NGNjZmRhMzQ4MmEzZTljOWVkYWZm",
 name:"Marjorie Goux",role:"Chief Legal Officer & Secretary"},
-
 {image:"https://www.rodanandfields.com/en-us/medias/14-exec-720x720-Sumita.jpg?context=bWFzdGVyfHJvb3R8NzAwNjN8aW1hZ2UvanBlZ3xoNzcvaGI5LzEzMjg1MDE4MTczNDcwLmpwZ3xkZDBiZmY0NTYyMzIyN2U1OTkzODdiZDQwMzJjMWE3ODFkNTNiZWIzNWVkZDUzZThjODRiMTAxZmRiZTI0YWFm",
 name:"Dr. Sumita Butani",role:"Senior Vice President, Innovation"},
 {image:"https://www.rodanandfields.com/en-us/medias/lp-Executives-4VerticalImageLockup-TimFalla-Desktop.jpg?context=bWFzdGVyfGltYWdlc3w5NTQ2MnxpbWFnZS9qcGVnfGltYWdlcy9oYzYvaDQwLzg4MjIxNjEyNDQxOTAuanBnfDYxMzJiYTI1ZjY1OGNlODIxNjE4ZWI1ZGUxZjFiNTRmNWFjNzUyZjQ2MjRhOGYwM2Q4NTJmZTA0OGI1Y2E4MTM",
@@ -29,7 +28,7 @@ name:"Melissa Seitz",role:"Vice President and General Manager, APAC"},
 name:"Dalia Stoddard",role:"Chief Transformation Officer"},
 
 {image:"https://www.rodanandfields.com/en-us/medias/12-exec-720x720-Janine.jpg?context=bWFzdGVyfHJvb3R8MTA4OTE2fGltYWdlL2pwZWd8aDJjL2g3YS8xMzI4NTAxODU2NjY4Ni5qcGd8MDFkNGNhZTZlOGJhNzJjNWNmNzFmZGZiYTIxNzY2ZWRmMTUyZDcwYTIyNWVlOGE0MjMxMjVhNTU0MGI1ZTgwZA",
-name:"Janine Weber",role:"Senior Vice President, North America Sales"},
+name:"Janine Weber",role:"Senior Vice President, North America Sales"}
 ]
 
 data.map(function(elem){
