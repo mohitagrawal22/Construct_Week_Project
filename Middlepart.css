@@ -1,0 +1,101 @@
+#reference ~ div {
+    width:1300px;
+    height:300px;
+    /* border:solid 1px red; */
+    margin-bottom:50px;
+}
+img{
+    width:300px;
+    height:auto
+}
+#reference ~ div, #firstblock > div{
+    display:flex;
+}
+#firstblock > div ,#secondblock > div {
+
+    width:430px;
+    height:auto;
+    /* border:1px solid black; */
+   
+}
+#secondblock > div {
+text-align:center;
+width:320px;
+justify-content: space-between;
+}
+#secondblock{
+    justify-content: space-between;
+
+}
+
+#thirdblock > div {
+
+    width:380px;
+    height:300px;
+    /* border:1px solid black; */
+
+}
+
+#fourthblock{
+
+    height:150px !important;
+    background-color:#E1EAF1
+
+}
+#fourthblock > div {
+
+    display:flex;
+    justify-content:center;
+    background-color:white;
+    /* align-content:center; */
+    margin:35px 10px 10px 85px;
+    width:1100px;
+    height:80px;
+    /* text-align:center */
+   
+
+}
+#fourthblock > div > div{
+
+    width:350px;
+    justify-content:center;
+    /* border:1px solid black; */
+  
+    
+    /* text-align:center; */
+
+}
+.list{
+
+   /* text-align:center; */
+   margin-left:50px;
+
+}
+
+.buton{
+
+    text-align:center;
+    padding:20px;
+
+}
+ .buton > button {
+
+   
+    padding:11px 50px 7px 50px ;
+   
+
+}  
+.bottom{
+    text-align:center;
+    font-size:xx-large;
+    font-weight:lighter;
+    
+
+}
+.bottom > p{
+    margin-bottom:100px;
+
+}
+a {
+    color:black;
+}
