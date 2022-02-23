@@ -53,7 +53,7 @@
     /* background-color:white; */
     margin:auto;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     text-decoration:none;
     list-style:none;
     padding:1%;
@@ -73,8 +73,6 @@ input{
     border:1px solid white;
 }
 
-  /* select{
-      background-color:#1c2938;
-      border:0px;
-      color:white;
-  }   */
+.right-menu{
+    margin-left:10px;
+}
