@@ -1,0 +1,182 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+       #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        width: 70%;
+        margin: auto;
+       
+      
+      }
+      #button{
+          width: 290px;
+          height: 50px;
+          border: solid black 1px;
+          font-size: 20px;
+      }
+      #img{
+          display: flex;
+         height: 250px;
+         padding-bottom: 5px;
+         
+        
+          
+      }
+      #style{
+          text-align: center;
+      }
+
+      
+      
+
+      
+    </style>
+  </head>
+  <body>
+    <div id="container">
+     
+    </div>
+  </body>
+</html>
+
+<script>
+
+    var img = [
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+        name:"REDEFINE Regimen",
+        price:"$220.00",
+        strikedOffPrice:"$197.00 with PC PERKS",
+        button:"SHOP NOW "
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY",
+        name:"Total Rf Serum",
+        price:"$175.00",
+        strikedOffPrice:"$157.00 with PC PERKS",
+        button:"ADD TO BAG "
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHLSH01-Regimen-Explainer-R-F-Lash-Boost-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxMDc0OHxpbWFnZS9wbmd8aW1hZ2VzL2hmMS9oYWMvMTQ1MzIwNDI1ODgxOTAucG5nfDQyNTQ0OGUzYmMwZTJkM2YzNzE1MjE2NzQ1M2YxMWQ5M2E3ZWQ2MjAwMDA3MzFmNjQyOWUwNDU3OWZmMTkzZDY",
+        name:"R+f lash Boot",
+        price:"$155.00",
+        strikedOffPrice:"$100.00 with PC PERKS ",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh",
+        name:"Active Hydration Bright Eye Complex",
+        price:"$72.00",
+        strikedOffPrice:"$64.00 with PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA",
+        name:"Active Hydration Serum",
+        price:"$112.00",
+        strikedOffPrice:"$100.00 with PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+        name:"REDEFINE Multi-Function Eye Cream",
+        price:"$70.00",
+        strikedOffPrice:"$63.00 with PC PERKS",
+        button:"ADD TO BAG "
+    }
+
+    ,
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5",
+        name:"Rodan + Fields Active Hydration Body Replenish",
+        price:"$66.00",
+        strikedOffPrice:"$59.00 with PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2gyNi9oZjgvMTQ1MzIxNjc2MzA4NzgucG5nfGM0YTc0NjM0YWIzM2QxZDZlOTc0NTdmYjA4M2EyNDA5NGJhODg3ZDQwMGJjZjdiMTZlYTI2MjYwNjI2Y2JhZGE",
+        name:"Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+        price:"$83.00",
+        strikedOffPrice:"$74.00 with PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY",
+        name:"REVERSE Regimen",
+        price:"$195.00",
+        strikedOffPrice:"$175.00 with PC PERKS",
+        button:"SHOP NOW "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
+        name:"UNBLEMISH Regimen",
+        price:"$190.00",
+        strikedOffPrice:"$171.00 with PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/SOWA125-SOTT050-SOMO050-SOSS050-SOOTHE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MDc1MHxpbWFnZS9wbmd8aW1hZ2VzL2g5Zi9oYWMvMTM3NTgzODUxMjc0NTQucG5nfGFmOTE5ZGY1MjdhZmFkNDhhNzNiOTkyYTYzODAxNzI4OTE3ZGQ5Zjk3YzRlOGRlNTIzYzU3MzZlMTQzNGEzNTI",
+        name:"SOOTHE Regime",
+        price:"$185.00",
+        strikedOffPrice:"$166.00 with PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE",
+        name:"RECHARGE Regime",
+        price:"$134.00",
+        strikedOffPrice:"$120.00 with PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+
+
+
+
+]
+
+img.map(function (elem, index, array) {
+
+var div = document.createElement("div");
+var img = document.createElement("img");
+img.setAttribute("src", elem.imgUrl);
+img.setAttribute("id","img")
+
+var name = document.createElement("h4");
+name.innerText = elem.name;
+name.setAttribute("id","style")
+
+var role = document.createElement("p");
+role.innerText = elem.price; 
+role.setAttribute("id","style")
+
+role1 = document.createElement("p");
+role1.innerText = elem.strikedOffPrice;
+role1.setAttribute("id","style")
+
+
+var button=document.createElement("button");
+button.innerText=elem.button;
+
+
+button.setAttribute("id","button")
+
+
+
+
+    
+
+    div.append(img, name, role, role1,button);
+    document.querySelector("#container").append(div);
+  });
+</script>
