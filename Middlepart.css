@@ -1,34 +1,35 @@
-#reference ~ div {
+#reference26 ~ div {
     width:1300px;
     height:300px;
     /* border:solid 1px red; */
     margin-bottom:50px;
 }
-img{
+.img26{
     width:300px;
-    height:auto
+    height:auto;
+    object-fit :cover;
 }
-#reference ~ div, #firstblock > div{
+#reference26 ~ div, #firstblock26 > div{
     display:flex;
 }
-#firstblock > div ,#secondblock > div {
+#firstblock26 > div ,#secondblock26 > div {
 
     width:430px;
     height:auto;
     /* border:1px solid black; */
    
 }
-#secondblock > div {
+#secondblock26 > div {
 text-align:center;
 width:320px;
 justify-content: space-between;
 }
-#secondblock{
+#secondblock26{
     justify-content: space-between;
 
 }
 
-#thirdblock > div {
+#thirdblock26 > div {
 
     width:380px;
     height:300px;
@@ -36,13 +37,13 @@ justify-content: space-between;
 
 }
 
-#fourthblock{
+#fourthblock26{
 
     height:150px !important;
     background-color:#E1EAF1
 
 }
-#fourthblock > div {
+#fourthblock26 > div {
 
     display:flex;
     justify-content:center;
@@ -55,7 +56,7 @@ justify-content: space-between;
    
 
 }
-#fourthblock > div > div{
+#fourthblock26 > div > div{
 
     width:350px;
     justify-content:center;
@@ -65,37 +66,38 @@ justify-content: space-between;
     /* text-align:center; */
 
 }
-.list{
+.list26{
 
    /* text-align:center; */
    margin-left:50px;
 
 }
 
-.buton{
+.buton26{
 
     text-align:center;
     padding:20px;
 
 }
- .buton > button {
+ .buton26 > .button26 {
 
    
     padding:11px 50px 7px 50px ;
    
 
 }  
-.bottom{
+.bottom26{
     text-align:center;
-    font-size:xx-large;
-    font-weight:lighter;
+    
     
 
 }
-.bottom > p{
-    margin-bottom:100px;
-
+ .p26{
+    margin-top:10px;
+    font-size:27px;
+    font-weight:normal;
+    margin-left:35px;
 }
-a {
+.a26 {
     color:black;
 }
