@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container_107 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 400px);
+        width: 78%;
+        margin: auto;
+
+        /* border: 1px solid red; */
+        font-family: sans-serif;
+      }
+      #button_107 {
+        /* width: 290px; */
+        /* height: 50px; */
+        padding: 11px 76px;
+        border: solid black 1px;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-left: 35px;
+        background-color: white;
+      }
+      #img_107 {
+        /* display: flex; */
+        height: 240px;
+        padding-bottom: 5px;
+        margin-left: 18px;
+      }
+      #style1_107 {
+        overflow: hidden;
+        text-align: center;
+        font-size: 14.3px;
+        font-weight: 400;
+        margin: auto;
+        margin-bottom: 21px;
+        font-family: HCoGothamSSmRegular, Arial, Sans-Serif;
+        /* margin-left: -40px; */
+        padding-bottom: 5px;
+      }
+      #style2_107 {
+        text-align: center;
+        /* margin: auto; */
+        /* justify-content: center; */
+        margin-top: 50px;
+
+        font-size: 13px;
+        /* font-weight:0; */
+        display: inline;
+
+        margin-left: 50px;
+        margin-bottom: 5px;
+        color: rgb(141, 140, 140);
+      }
+      #style3_107 {
+        display: inline;
+        text-align: center;
+        font-size: 13px;
+        color: rgb(141, 140, 140);
+        margin-left: 10px;
+      }
+      #style4_107 {
+        color: rgb(118, 205, 255);
+        display: inline;
+        font-size: 11.8px;
+        font-weight: bold;
+        margin-left: 4px;
+      }
+
+      #h2_107 {
+        text-align: center;
+        font-size: 27px;
+        font-weight: 500;
+      }
+      #para_107 {
+        text-align: justify;
+        text-align: center;
+      }
+      #ram_107 {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h2_107">SUN PROTECTION</h1>
+
+    <div id="ram_107">
+      <p id="para_107">
+        Our sun protection products help defend your face and body against the
+        damaging effects of UV rays, which can exacerbate existing skin concerns
+        and cause excessive pigmentation, fine lines and increased sensitivity.
+      </p>
+    </div>
+    <div id="container_107"></div>
+  </body>
+</html>
+
+<script>
+  var img = [
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/DERDS-detail-1-.jpg?context=bWFzdGVyfGltYWdlc3wyOTY1MnxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaGFjLzEzNTMzMTM3Njk4ODQ2LmpwZ3xjOWYzNDA1ZjRiODE0ZTJiMDNiZGIxOTVhZTQ1ZWUwYTI4MDAxYTE4ODRhZDZhYjNlOTE4YTE0ZTcwZDM5NDg5",
+      name: "Radiant Defense Perfecting Liquid SPF 30 - Shell",
+      price: "$66.00 |",
+      strikedOffPrice: "$59.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/ESFB150-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxODk0N3xpbWFnZS9qcGVnfGltYWdlcy9oZGYvaDRkLzEwMjkxODI5Mzc1MDA2LmpwZ3xhYWFjOGQwMDNmZjYyNTliYWQwYjFhZDI5MmMzMTBiZDg1Y2U1NDBiZjg0ZDk3M2U1ZTVjNzU4ZTI0YzlkNWU1",
+      name: "ESSENTIALS FACE + BODY SUNSCREEN BROAD SPECTRUM SPF 50",
+      price: "$34.00 |",
+      strikedOffPrice: "$30.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/ESLS002-cat.jpg?context=bWFzdGVyfGltYWdlc3wzNjk5NHxpbWFnZS9qcGVnfGltYWdlcy9oMzUvaDRlLzg4MjE4NDQ5Njc0NTQuanBnfGQ5M2Q2OWZjNDEzM2Q4MTMwYTc5N2M3MThhYzdiODVjYTMzZjY2N2Y3MWVjYTNlZWNmNmRlMmEzMGNmNDlhY2Q",
+      name: "ESSENTIALS LIP SHIELD SPF 25 (TWO-PACK)",
+      price: "$19.00 |",
+      strikedOffPrice: "$17.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/AATT030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wyMDczNjR8aW1hZ2UvanBlZ3xpbWFnZXMvaGIyL2gyMS8xMTg1NDA1NDM5MTgzOC5qcGd8MjZkNzAxMTI1YTBiMjgzZjNmMTIyMjA0NWE1ZTFmZjcyZDNjY2Y1OTU2MjNmNjY5ZDEyNGMwNzM4OTU3MDEyNw",
+      name: "REDEFINE Triple Defense Cream Broad Spectrum SPF 30",
+      price: "$90.00 |",
+      strikedOffPrice: "$81.00 With",
+      pc: "PC PERKS",
+      button: "SHOP NOW ",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/AATL030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTY3MDB8aW1hZ2UvanBlZ3xpbWFnZXMvaDg2L2g4Yi8xMTg1NDA1MjI2MTkxOC5qcGd8ZmNlMmFlNjExNTQxNmFlYWM0OGI2Nzc1NmFjMTUyYmUyN2NlN2IyY2M4MDEyM2Q2MzNiZjdmMmJiYmNiMjBmMQ",
+      name: "REDEFINE Triple Defense Lotion Broad Spectrum SPF 30",
+      price: "$90.00 |",
+      strikedOffPrice: "$81.00 With",
+      pc: "PC PERKS",
+      button: "SHOP NOW ",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/RVSS050-Regimen-Explainer-Step3-PM-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w2NzQwMHxpbWFnZS9wbmd8aW1hZ2VzL2hiYS9oZWUvMTM0MjgwMjUxOTY1NzQucG5nfDVlNTcxMjlkZDFkMGI0OTQyMWE3YzZjOTNmZjQ0MGFkMWE2NTEzZmJlOTY2ZDI4NGNmZWRkODQ2MDI5ZjJjZGY",
+      name: "REVERSE Brightening Defense Fluid Lotion SPF 50",
+      price: "$40.00 |",
+      strikedOffPrice: "$36.00 With",
+      pc: "PC PERKS",
+      button: "SHOP NOW ",
+    },
+
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/RCSP040-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMjgxOXxpbWFnZS9qcGVnfGltYWdlcy9oNjEvaDIyLzkxNzEyNDIwMjQ5OTAuanBnfDIyNmU3MTAxZjRiOWY5YjFiZjEzNGZkNDhlOGQ0M2EyYzFhOGFmYzI2ODAzNjc5NjY5NzI4OWVjZmQyNjljOWU",
+      name: "RECHARGE Protect + Blur Broad Spectrum SPF 30 Sunscreen",
+      price: "$48.00 |",
+      strikedOffPrice: "$43.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG ",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/UNSS030-Regimen-Explainer-Step4-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w2MDkxOXxpbWFnZS9wbmd8aW1hZ2VzL2hmOC9oZjYvMTM0MjgwMzE3MTc0MDYucG5nfGViMWFiNjUyNjZhNTY2ZjkzMjg5YWE4ZjY1ZDEwM2Q0ODdmZjc5ZjIwMTYwOTNiZGMwNThhZjE1NGIzNmJjMWY",
+      name: "UNBLEMISH Invisible Matte Defense Broad Spectrum SPF 30",
+      price: "$40.00 |",
+      strikedOffPrice: "$36.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG ",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/SOSS050-Regimen-Explainer-Step4-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wzNjYwNHxpbWFnZS9wbmd8aW1hZ2VzL2g2ZS9oNzcvMTM0MjgwMjg4NjY1OTAucG5nfGZiODQ3NmM2ZGFhMTY4ZmUyMTk1MmVhNzg2ZmRmNjUyMWYxZTZjYjk0Y2I2ZWU2ZjdlZjcxOWRhMTc5ZWQ2ZTc",
+      name: "SOOTHE Daily Mineral Sunscreen SPF 30",
+      price: "$40.00 |",
+      strikedOffPrice: "$36.00 WithPC PERKS",
+      pc: "PC PERKS",
+      button: "ADD TO BAG ",
+    },
+  ];
+
+  img.map(function (elem, index, array) {
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.imgUrl);
+    img.setAttribute("id", "img_107");
+
+    var name = document.createElement("h4");
+    name.innerText = elem.name;
+    name.setAttribute("id", "style1_107");
+
+    var role = document.createElement("p");
+    role.innerText = elem.price;
+    role.setAttribute("id", "style2_107");
+
+    var role1 = document.createElement("p");
+    role1.innerText = elem.strikedOffPrice;
+    role1.setAttribute("id", "style3_107");
+
+    var role2 = document.createElement("p");
+    role2.innerText = elem.pc;
+    role2.setAttribute("id", "style4_107");
+
+    var button = document.createElement("button");
+    button.innerText = elem.button;
+
+    button.setAttribute("id", "button_107");
+
+    div.append(img, name, role, role1, role2, button);
+    document.querySelector("#container_107").append(div);
+  });
+</script>

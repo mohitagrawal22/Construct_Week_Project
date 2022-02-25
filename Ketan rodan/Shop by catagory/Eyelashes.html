@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container_101 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 400px);
+        width: 78%;
+        margin: auto;
+
+        /* border: 1px solid red; */
+        font-family: sans-serif;
+      }
+      #button_101 {
+        /* width: 290px; */
+        /* height: 50px; */
+        padding: 11px 76px;
+        border: solid black 1px;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-left: 35px;
+        background-color: white;
+      }
+      #img_101 {
+        /* display: flex; */
+        height: 240px;
+        padding-bottom: 5px;
+        margin-left: 18px;
+      }
+      #style1_101 {
+        overflow: hidden;
+        text-align: center;
+        font-size: 14.3px;
+        font-weight: 400;
+        margin: auto;
+        margin-bottom: 21px;
+        font-family: HCoGothamSSmRegular, Arial, Sans-Serif;
+        /* margin-left: -40px; */
+        padding-bottom: 5px;
+      }
+      #style2_101 {
+        text-align: center;
+        /* margin: auto; */
+        /* justify-content: center; */
+        margin-top: 50px;
+
+        font-size: 13px;
+        /* font-weight:0; */
+        display: inline;
+
+        margin-left: 50px;
+        margin-bottom: 5px;
+        color: rgb(141, 140, 140);
+      }
+      #style3_101 {
+        display: inline;
+        text-align: center;
+        font-size: 13px;
+        color: rgb(141, 140, 140);
+        margin-left: 10px;
+      }
+      #style4_101 {
+        color: rgb(118, 205, 255);
+        display: inline;
+        font-size: 11.8px;
+        font-weight: bold;
+        margin-left: 4px;
+      }
+
+      #h2_101 {
+        text-align: center;
+        font-size: 27px;
+        font-weight: 500;
+      }
+      #para_101 {
+        text-align: justify;
+        text-align: center;
+      }
+      #ram_101 {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h2_101">EYES, LIPS & LASHES</h1>
+
+    <div id="ram_101">
+      <p id="para_101">
+        Our eyes, lips and lashes products are the perfect way to enhance your
+        skincare Regimen. They target specific concerns, such as the appearance
+        of dark under-eye circles, expression lines, aging lips and sparse
+        lashes and brows.
+      </p>
+    </div>
+    <div id="container_101"></div>
+  </body>
+</html>
+
+<script>
+  var img = [
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+      name: "REDEFINE Multi-Function Eye Cream",
+      price: "$70.00 |",
+      strikedOffPrice: " $63.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG ",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/ENHLSH01-Regimen-Explainer-R-F-Lash-Boost-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxMDc0OHxpbWFnZS9wbmd8aW1hZ2VzL2hmMS9oYWMvMTQ1MzIwNDI1ODgxOTAucG5nfDQyNTQ0OGUzYmMwZTJkM2YzNzE1MjE2NzQ1M2YxMWQ5M2E3ZWQ2MjAwMDA3MzFmNjQyOWUwNDU3OWZmMTkzZDY",
+      name: "R + F Lash Boost",
+      price: "$155.00 |",
+      strikedOffPrice: "$139.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/brow-defining-boost-light-ENEBS01.jpg?context=bWFzdGVyfGltYWdlc3wyMTU3OXxpbWFnZS9qcGVnfGltYWdlcy9oODgvaDYzLzEzODE0NjU1MDU3OTUwLmpwZ3xjM2M3NGZiODY4OThkOWYxYzRmYTgyYzUzNTFiNDA2NmY1NmFkMGM1YzcyNmFiZWJhMmRjNGIzMWI1NTJiZjc1",
+      name: "Brow Defining Boost - Light",
+      price: "$112.00 |",
+      strikedOffPrice: "  $100.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh",
+      name: "Active Hydration Bright Eye Complex",
+      price: "$72.00 |",
+      strikedOffPrice: "  $64.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/AALS060-Regimen-Explainer-Lip-Renewing-Serum-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMzc3M3xpbWFnZS9wbmd8aW1hZ2VzL2hmYi9oNDEvMTQ2MDQwOTM1ODc0ODYucG5nfGIyNTY2ZTJmMTAzMDc4MDhjZTkyYjYwZDI1MWZlNGNlZWQ2ZGIzYzc3ZjkwN2RjZDY3YmU3NDkwNDIyOWUwYWU",
+      name: "REDEFINE Lip Renewing Serum",
+      price: "$58.00 |",
+      strikedOffPrice: "$52.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/ESMRW01-cat.jpg?context=bWFzdGVyfHJvb3R8MTcyMDN8aW1hZ2UvanBlZ3xoNDQvaGIzLzg4MjE4NDUwNjU3NTguanBnfDgwYzE1YTgyMTE1MjkzMDVlZjVkMGU5MjVjODUzMDVhOTFjY2Y1YmMwNjZhOTZmZDI1NzQ1N2JlMWEwNGRkZGQ",
+      name: "ESSENTIALS INSTANT MAKEUP REMOVER WIPES",
+      price: "$32.00 |",
+      strikedOffPrice: "$28.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/ESMRB01-720x600-Desktop-1-.jpg?context=bWFzdGVyfGltYWdlc3w0MTM2OHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDMxLzE0MDMyNzUyNTc0NDk0LmpwZ3w5OTBlOTQ0ZDA5MjhhMzJiZDc3NWI4MGQ4Zjc3ZGVmYmJmM2M0YmU5MDkxNTc5NmMzOTJiNjBiMzEwZDZhOTc1",
+      name: "ESSENTIALS COMPLETE EYE MAKEUP REMOVER",
+      price: "$32.00 |",
+      strikedOffPrice: " $28.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/HAAGRLP1-AAWA125-AATN125-AATT030-AAPM030-ENHLSH01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0OTY1NnxpbWFnZS9qcGVnfGltYWdlcy9oY2IvaDg4LzEyNzgwOTE0NTA3ODA2LmpwZ3xlOGNmOTZiYjIyZGIxOTk4NGFhMDJiNDY1YzM0NzNjZjg2NDZiZTBkZTkwN2ZiOGIxZTBhNDQ0OWI5NzQ2ODMw",
+      name: "REDEFINE + Lash Boost Special",
+      price: "$343.00 |",
+      strikedOffPrice: "$307.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/HRVRBLP1-RVWA125-RVTG125-RVTTG50-RVSS050-ENHLSH01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0ODU4NnxpbWFnZS9qcGVnfGltYWdlcy9oYmQvaDYzLzEyNzcxNTgxNzIyNjU0LmpwZ3wzZGRiMDk0ZDAzZjgzOTk1MThkZWEzNGRkOTVjNTk2NTc2MTJiYWY1ODk0Y2YwMmI2NTU2YzVkODgzYTA0YTFk",
+      name: "REVERSE + Lash Boost Special",
+      price: "$318.00 |",
+      strikedOffPrice: "$286.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/HUNRJLP1-UNWA125-UNTJ125-UNTT030-UNSS030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0ODE5MHxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDk1LzEyNzcxNTkwODk3Njk0LmpwZ3w3ZDQ4ZDYzNjI0ZjI3YmU1MjhmOTI0N2QyYzYwNmVkZjY3YTc5MzdlNDBhMGJhN2I5NTRmNDZhYWE2M2NmNDY0",
+      name: "UNBLEMISH + Lash Boost Special",
+      price: "$312.00 |",
+      strikedOffPrice: "$280.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/HSORGLP1-SOWA125-SOTT050-SOMO050-SOSS050-ENHLSH01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MTg3OHxpbWFnZS9qcGVnfGltYWdlcy9oOTUvaGQ1LzEyNzcxNTg3MTk0OTEwLmpwZ3w2Y2Q0ZmI5MDMwYzdmYTEwMGUzYzU4M2NiZGRkMWYxOTQ2MWIwMDAwMDIyYTEzYzI4YzUzNTZmMjZhZjNkMTRi",
+      name: "SOOTHE + Lash Boost Special",
+      price: "$307.00 |",
+      strikedOffPrice: "$276.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/RCLBES1-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxOTIwM3xpbWFnZS9qcGVnfGltYWdlcy9oYWYvaDY2LzkxNzEyMzg3NDgxOTAuanBnfDIzM2NlODM0ODNjNTgxYThiMDAyMGJlYWEwMzRiZmU4ZDJiNThkODM3OTFmMmJhZjNmMzFmNDE3ODk5OWVhMzg",
+      name: "RECHARGE + Lash Boost Special",
+      price: "$256.00 |",
+      strikedOffPrice: " $230.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+  ];
+
+  img.map(function (elem, index, array) {
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.imgUrl);
+    img.setAttribute("id", "img_101");
+
+    var name = document.createElement("h4");
+    name.innerText = elem.name;
+    name.setAttribute("id", "style1_101");
+
+    var role = document.createElement("p");
+    role.innerText = elem.price;
+    role.setAttribute("id", "style2_101");
+
+    var role1 = document.createElement("p");
+    role1.innerText = elem.strikedOffPrice;
+    role1.setAttribute("id", "style3_101");
+
+    var role2 = document.createElement("p");
+    role2.innerText = elem.pc;
+    role2.setAttribute("id", "style4_101");
+
+    var button = document.createElement("button");
+    button.innerText = elem.button;
+
+    button.setAttribute("id", "button_101");
+
+    div.append(img, name, role, role1, role2, button);
+    document.querySelector("#container_101").append(div);
+  });
+</script>

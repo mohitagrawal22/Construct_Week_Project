@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container99 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 400px);
+        width: 78%;
+        margin: auto;
+
+        /* border: 1px solid red; */
+        font-family: sans-serif;
+      }
+      #button99 {
+        /* width: 290px; */
+        /* height: 50px; */
+        padding: 11px 76px;
+        border: solid black 1px;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-left: 35px;
+        background-color: white;
+      }
+      #img99 {
+        /* display: flex; */
+        height: 240px;
+        padding-bottom: 5px;
+        margin-left: 18px;
+      }
+      #style1_99 {
+        overflow: hidden;
+        text-align: center;
+        font-size: 14.3px;
+        font-weight: 400;
+        margin: auto;
+        margin-bottom: 21px;
+        font-family: HCoGothamSSmRegular, Arial, Sans-Serif;
+        /* margin-left: -40px; */
+        padding-bottom: 5px;
+      }
+      #style2_99 {
+        text-align: center;
+        /* margin: auto; */
+        /* justify-content: center; */
+        margin-top: 50px;
+
+        font-size: 13px;
+        /* font-weight:0; */
+        display: inline;
+
+        margin-left: 50px;
+        margin-bottom: 5px;
+        color: rgb(141, 140, 140);
+      }
+      #style3_99 {
+        display: inline;
+        text-align: center;
+        font-size: 13px;
+        color: rgb(141, 140, 140);
+        margin-left: 10px;
+      }
+      #style4_99 {
+        color: rgb(118, 205, 255);
+        display: inline;
+        font-size: 11.8px;
+        font-weight: bold;
+        margin-left: 4px;
+      }
+
+      #h2_99 {
+        text-align: center;
+        font-size: 27px;
+        font-weight: 500;
+      }
+      #para99 {
+        text-align: justify;
+        text-align: center;
+      }
+      #ram99 {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h2_99">ACCESSORIES</h1>
+
+    <div id="ram99">
+      <p id="para99">
+        Our accessories are designed to make application of our skincare
+        products super simple.
+      </p>
+    </div>
+    <div id="container99"></div>
+  </body>
+</html>
+
+<script>
+  var img = [
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/ESGA001-720x600-Desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w2NTQwN3xpbWFnZS9qcGVnfGltYWdlcy9oNDMvaGMxLzEzNjcwOTE5ODY0MzUwLmpwZ3w1NzExNGMwYzdlMWZkODUxNmY3NWI4MWE4OTVmODkwODY4NWQyMWViZjg3YTU4NTU0YjcyYWRhNDQwMTA0NTdj",
+      name: "ESSENTIALS GAUZE PADS",
+      price: "$11.00 |",
+      strikedOffPrice: "$10.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/ESMRW01-cat.jpg?context=bWFzdGVyfHJvb3R8MTcyMDN8aW1hZ2UvanBlZ3xoNDQvaGIzLzg4MjE4NDUwNjU3NTguanBnfDgwYzE1YTgyMTE1MjkzMDVlZjVkMGU5MjVjODUzMDVhOTFjY2Y1YmMwNjZhOTZmZDI1NzQ1N2JlMWEwNGRkZGQ",
+      name: "ESSENTIALS INSTANT MAKEUP REMOVER WIPES",
+      price: "$32.00 |",
+      strikedOffPrice: "$28.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/ESMRB01-720x600-Desktop-1-.jpg?context=bWFzdGVyfGltYWdlc3w0MTM2OHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDMxLzE0MDMyNzUyNTc0NDk0LmpwZ3w5OTBlOTQ0ZDA5MjhhMzJiZDc3NWI4MGQ4Zjc3ZGVmYmJmM2M0YmU5MDkxNTc5NmMzOTJiNjBiMzEwZDZhOTc1",
+      name: "ESSENTIALS COMPLETE EYE MAKEUP REMOVER",
+      price: "$32.00 |",
+      strikedOffPrice: "$28.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/XTGTPS2-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3w0NDE5MnxpbWFnZS9qcGVnfGltYWdlcy9oN2UvaDIwLzkxNzEyNDcyNjc4NzAuanBnfDAxNTY5NTcxN2JjODM5Njg1NDU0ZTFkYWFkY2E5MmZhYmExNWNmZWI1MzU3ZDNkMTEyNzkyYjZmMTMyNTc3Yzg",
+      name: "PORE CLEANSING TIPS (8-PACK)",
+      price: "$35.00 |",
+      strikedOffPrice: "$31.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/XTBTPS2-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3w0MTc3MXxpbWFnZS9qcGVnfGltYWdlcy9oOTIvaDA1LzkxNzEyNDcwMzg0OTQuanBnfGE0ZjgxYTU4ZjNiMTVjMGVkMWY2NWVhYWVmNDVhN2RiNzVkZmRmZTA1MWE1ZWUzZGEzNGIzMmMxNjJmN2E4YzI",
+      name: "BLACKHEAD REMOVAL TIPS (8-PACK)",
+      price: "$35.00 |",
+      strikedOffPrice: "$31.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/XTSPS01-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMjIzN3xpbWFnZS9qcGVnfGltYWdlcy9oMTAvaDUzLzkxNzEyNDkzMzIyNTQuanBnfDEwODQwMjA4OGRhMjExMGVlYzgwZmFkMzc4ZjljZWZjZjYyZDQxZjFiOTdlNjZmZTNiMzMxYjIwNTM3Y2Y1ZGQ",
+      name: "PORE PREP SOLUTION",
+      price: "$32.00 |",
+      strikedOffPrice: " $28.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/DERDLB1-cat.jpg?context=bWFzdGVyfGltYWdlc3wxMDkyNHxpbWFnZS9qcGVnfGltYWdlcy9oNGEvaDE4Lzg4MjE4NDQxNDgyNTQuanBnfDVmY2E4ZmM1YzdlNjQxMmI4YjgzNGY4MDIwNWVlZDc2MmNhYzVjN2FjZmQyMTFiNmU1NDc4Y2RiNGQyOWFmZjk",
+      name: "RADIANT DEFENSE LIQUID BRUSH",
+      price: "$38.00 |",
+      strikedOffPrice: "$34.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/AAAPR01-cat.jpg?context=bWFzdGVyfGltYWdlc3w2MTA3NHxpbWFnZS9qcGVnfGltYWdlcy9oYTYvaDc3Lzg4MjE4NDE3MjM0MjIuanBnfGM3MTc2MmQzNTg4MWJkZTRhNjkyZjBhYmE2MDkxMjAzYzZiMWQwNGI2NGEzZDUyOTdjMDk3M2ZlNWU5M2JmNTc",
+      name: "REDEFINE AMP MD SYSTEM REFILL",
+      price: "$120.00 |",
+      strikedOffPrice: "$108.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/PTPK002-cat.jpg?context=bWFzdGVyfGltYWdlc3wzMzY0NXxpbWFnZS9qcGVnfGltYWdlcy9oZDQvaGY0Lzg4MjE4NDUyMjk1OTguanBnfDUxNWE2NTQwMzY3Yzc4NDg0NThjZmY1ZTZkOWUzYTA2MTQ4ZTM3NTdhOGNlYjgxYmJlMTBjMGI2ZWY5NzA4ZTE",
+      name: "REDEFINE AMP MD PURIFICATION TABLETS",
+      price: "$22.00 |",
+      strikedOffPrice: "$19.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+  ];
+
+  img.map(function (elem, index, array) {
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.imgUrl);
+    img.setAttribute("id", "img99");
+
+    var name = document.createElement("h4");
+    name.innerText = elem.name;
+    name.setAttribute("id", "style1_99");
+
+    var role = document.createElement("p");
+    role.innerText = elem.price;
+    role.setAttribute("id", "style2_99");
+
+    var role1 = document.createElement("p");
+    role1.innerText = elem.strikedOffPrice;
+    role1.setAttribute("id", "style3_99");
+
+    var role2 = document.createElement("p");
+    role2.innerText = elem.pc;
+    role2.setAttribute("id", "style4_99");
+
+    var button = document.createElement("button");
+    button.innerText = elem.button;
+
+    button.setAttribute("id", "button99");
+
+    div.append(img, name, role, role1, role2, button);
+    document.querySelector("#container99").append(div);
+  });
+</script>

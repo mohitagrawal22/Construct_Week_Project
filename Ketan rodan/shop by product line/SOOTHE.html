@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container_113 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 400px);
+        width: 78%;
+        margin: auto;
+
+        /* border: 1px solid red; */
+        font-family: sans-serif;
+      }
+      #button_113 {
+        /* width: 290px; */
+        /* height: 50px; */
+        padding: 11px 76px;
+        border: solid black 1px;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-left: 35px;
+        background-color: white;
+      }
+      #img_113 {
+        /* display: flex; */
+        height: 240px;
+        padding-bottom: 5px;
+        margin-left: 18px;
+      }
+      #style1_113 {
+        overflow: hidden;
+        text-align: center;
+        font-size: 14.3px;
+        font-weight: 400;
+        margin: auto;
+        margin-bottom: 21px;
+        font-family: HCoGothamSSmRegular, Arial, Sans-Serif;
+        /* margin-left: -40px; */
+        padding-bottom: 5px;
+      }
+      #style2_113 {
+        text-align: center;
+        /* margin: auto; */
+        /* justify-content: center; */
+        margin-top: 50px;
+
+        font-size: 13px;
+        /* font-weight:0; */
+        display: inline;
+
+        margin-left: 50px;
+        margin-bottom: 5px;
+        color: rgb(141, 140, 140);
+      }
+      #style3_113 {
+        display: inline;
+        text-align: center;
+        font-size: 13px;
+        color: rgb(141, 140, 140);
+        margin-left: 10px;
+      }
+      #style4_113 {
+        color: rgb(118, 205, 255);
+        display: inline;
+        font-size: 11.8px;
+        font-weight: bold;
+        margin-left: 4px;
+      }
+
+      #h2_113 {
+        text-align: center;
+        font-size: 27px;
+        font-weight: 500;
+      }
+      #para_113 {
+        text-align: justify;
+        text-align: center;
+      }
+      #ram_113 {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h2_113">SOOTHE</h1>
+
+    <div id="ram_113">
+      <p id="para_113">
+        Our SOOTHE products for visible redness or dry, sensitive skin calm,
+        nurture, moisturize and protect skin instantly — and over time.
+      </p>
+    </div>
+    <div id="container_113"></div>
+  </body>
+</html>
+
+<script>
+  var img = [
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/SOWA125-SOTT050-SOMO050-SOSS050-SOOTHE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MDc1MHxpbWFnZS9wbmd8aW1hZ2VzL2g5Zi9oYWMvMTM3NTgzODUxMjc0NTQucG5nfGFmOTE5ZGY1MjdhZmFkNDhhNzNiOTkyYTYzODAxNzI4OTE3ZGQ5Zjk3YzRlOGRlNTIzYzU3MzZlMTQzNGEzNTI",
+      name: "SOOTHE Regimen",
+      price: "$185.00 |",
+      strikedOffPrice: "$166.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/HSORGTRF-SOWA125-SOTT050-SOMO050-SOSS050-ENFM030-900x900-tablet-1.jpg?context=bWFzdGVyfGltYWdlc3wxMTAzNjF8aW1hZ2UvanBlZ3xpbWFnZXMvaGY3L2g5MS8xMzk3NzY1Nzc3MDAxNC5qcGd8ZDhkOGZhNDhhNjAwMTdjN2YxNmRhMjlkYjkzZmVjYzgyMTcwY2VhMmNlMjhlZDQ5NGJhMzExNWQxNjljYjM0Mg",
+      name: "SOOTHE + Total RF Serum Special",
+      price: "$323.00 |",
+      strikedOffPrice: " $290.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/HSORGLP1-SOWA125-SOTT050-SOMO050-SOSS050-ENHLSH01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MTg3OHxpbWFnZS9qcGVnfGltYWdlcy9oOTUvaGQ1LzEyNzcxNTg3MTk0OTEwLmpwZ3w2Y2Q0ZmI5MDMwYzdmYTEwMGUzYzU4M2NiZGRkMWYxOTQ2MWIwMDAwMDIyYTEzYzI4YzUzNTZmMjZhZjNkMTRi",
+      name: "SOOTHE + Lash Boost Special",
+      price: "$307.00 |",
+      strikedOffPrice: "$276.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/SORMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTg4MzN8aW1hZ2UvanBlZ3xoOTEvaDUzLzEzNjE1ODc4Mjc1MTAyLmpwZ3wwY2QzZDVmYTIzNDhlYjY1YjMzYWRjN2RkMzJmNzVlNGQxZWM1MTBhZjA1YjgwMzhkMWI4ZTNhMjM5ODRhMmJi",
+      name: "SOOTHE Rescue Mask",
+      price: "$60.00 |",
+      strikedOffPrice: "$54.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/SOWA125-Regimen-Explainer-Step1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w0MjgzNnxpbWFnZS9wbmd8aW1hZ2VzL2g2My9oOTUvMTM0MjgwMjU5ODMwMDYucG5nfDY0OWEyMzA0Mzg3YTE0YjlhM2NiYTUxOGM3YWQ3ZGVmYWNkOGIyNmJkMzFlNzNmZGM3NDY5OGFjY2ZiMDlkYjY",
+      name: "SOOTHE Calming Gel Cleanser",
+      price: "$45.00 |",
+      strikedOffPrice: "$40.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/SOTT050-Regimen-Explainer-Step2-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyNjQxNHxpbWFnZS9wbmd8aW1hZ2VzL2gyOS9oOTYvMTM0MjgwMjY4MDIyMDYucG5nfDRhMjNlMzg3NWUxNWEyYmRmZTc5MzRlMzQ2ZDY1OWQ1YTRmZmZiZTA3NTVmMThjOWY3NmUyM2UxNmI1ZWFiMTU",
+      name: "SOOTHE Sensitive Skin Treatment",
+      price: "$90.00 |",
+      strikedOffPrice: "$81.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/SOMO050-Regimen-Explainer-Step3-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w1MzU5MXxpbWFnZS9wbmd8aW1hZ2VzL2gyMi9oZjkvMTM0MjgwMjc2NTQxNzQucG5nfGUzMTdjNzk3MzgyZmY1YWRlNjA3YWIzMmM4ZDZhYjhiYmY5N2IyZDRlNWZlYTZhNjE3ZDFmNzQ0ZjJjODIwMjE",
+      name: "SOOTHE Moisturizing Rescue Cream",
+      price: "$60.00 |",
+      strikedOffPrice: "$54.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/SOSS050-Regimen-Explainer-Step4-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wzNjYwNHxpbWFnZS9wbmd8aW1hZ2VzL2g2ZS9oNzcvMTM0MjgwMjg4NjY1OTAucG5nfGZiODQ3NmM2ZGFhMTY4ZmUyMTk1MmVhNzg2ZmRmNjUyMWYxZTZjYjk0Y2I2ZWU2ZjdlZjcxOWRhMTc5ZWQ2ZTc",
+      name: "SOOTHE Daily Mineral Sunscreen SPF 30",
+      price: "$40.00 |",
+      strikedOffPrice: "$36.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+  ];
+
+  img.map(function (elem, index, array) {
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.imgUrl);
+    img.setAttribute("id", "img_113");
+
+    var name = document.createElement("h4");
+    name.innerText = elem.name;
+    name.setAttribute("id", "style1_113");
+
+    var role = document.createElement("p");
+    role.innerText = elem.price;
+    role.setAttribute("id", "style2_113");
+
+    var role1 = document.createElement("p");
+    role1.innerText = elem.strikedOffPrice;
+    role1.setAttribute("id", "style3_113");
+
+    var role2 = document.createElement("p");
+    role2.innerText = elem.pc;
+    role2.setAttribute("id", "style4_113");
+
+    var button = document.createElement("button");
+    button.innerText = elem.button;
+
+    button.setAttribute("id", "button_113");
+
+    div.append(img, name, role, role1, role2, button);
+    document.querySelector("#container_113").append(div);
+  });
+</script>

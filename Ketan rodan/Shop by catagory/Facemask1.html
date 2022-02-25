@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container_102 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 400px);
+        width: 78%;
+        margin: auto;
+
+        /* border: 1px solid red; */
+        font-family: sans-serif;
+      }
+      #button_102 {
+        /* width: 290px; */
+        /* height: 50px; */
+        padding: 11px 76px;
+        border: solid black 1px;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-left: 35px;
+        background-color: white;
+      }
+      #img_102 {
+        /* display: flex; */
+        height: 240px;
+        padding-bottom: 5px;
+        margin-left: 18px;
+      }
+      #style1_102 {
+        overflow: hidden;
+        text-align: center;
+        font-size: 14.3px;
+        font-weight: 400;
+        margin: auto;
+        margin-bottom: 21px;
+        font-family: HCoGothamSSmRegular, Arial, Sans-Serif;
+        /* margin-left: -40px; */
+        padding-bottom: 5px;
+      }
+      #style2_102 {
+        text-align: center;
+        /* margin: auto; */
+        /* justify-content: center; */
+        margin-top: 50px;
+
+        font-size: 13px;
+        /* font-weight:0; */
+        display: inline;
+
+        margin-left: 50px;
+        margin-bottom: 5px;
+        color: rgb(141, 140, 140);
+      }
+      #style3_102 {
+        display: inline;
+        text-align: center;
+        font-size: 13px;
+        color: rgb(141, 140, 140);
+        margin-left: 10px;
+      }
+      #style4_102 {
+        color: rgb(118, 205, 255);
+        display: inline;
+        font-size: 11.8px;
+        font-weight: bold;
+        margin-left: 4px;
+      }
+
+      #h2_102 {
+        text-align: center;
+        font-size: 27px;
+        font-weight: 500;
+      }
+      #para_102 {
+        text-align: justify;
+        text-align: center;
+      }
+      #ram_102 {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h2_102">FACE MASKS</h1>
+
+    <div id="ram_102">
+      <p id="para_102">
+        Our face masks use potent ingredients to enhance your skincare routine
+        by tackling specific concerns. Add them to any Regimen for immediate
+        improvements you can see and even more results over time.
+      </p>
+    </div>
+    <div id="container_102"></div>
+  </body>
+</html>
+
+<script>
+  var img = [
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/AARMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTUyMTd8aW1hZ2UvanBlZ3xoYTUvaDliLzEzNjE1MDM2MTcwMjcwLmpwZ3xhM2U4ZGUyYzhhOGNhOTBiM2I0NjE4YjU1MTM5MjUwMGVhOTJhZjdlNzcwOTU2NmEwMDEwZjNmNmEyNDc1OGUz",
+      name: "REDEFINE Rejuvenation Mask",
+      price: "$60.00",
+      strikedOffPrice: "$54.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/RVRMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTQ4NzJ8aW1hZ2UvanBlZ3xoYTkvaDRiLzEzNjE2MDEzMjQ2NDk0LmpwZ3w0NGQyYWM2NjM3OGIwNDdmZWYzOGJlZjBjNGMyMjk1MmNhNDY3N2Q1ZDhlZTE5NDlhNDA1ZmM3YTFiNzc5MDli",
+      name: "REVERSE Radiance Mask",
+      price: "$60.00 |",
+      strikedOffPrice: "$54.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/UNRMF50-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MTg2NnxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaDk2LzEzNjE1ODgxMzg4MDYyLmpwZ3w0ZGE1ZWNiZWI1OTdiYmFkMjY3ZWU3ZWVmMDBkZjdlOWYzMDY4MGUwYWE4NTZiZTZjN2M3YjUxN2M2NmYxYjhk",
+      name: "UNBLEMISH Clarifying Mask",
+      price: "$60.00 |",
+      strikedOffPrice: "$54.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/SORMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTg4MzN8aW1hZ2UvanBlZ3xoOTEvaDUzLzEzNjE1ODc4Mjc1MTAyLmpwZ3wwY2QzZDVmYTIzNDhlYjY1YjMzYWRjN2RkMzJmNzVlNGQxZWM1MTBhZjA1YjgwMzhkMWI4ZTNhMjM5ODRhMmJi",
+      name: "SOOTHE Rescue Mask",
+      price: "$60.00 |",
+      strikedOffPrice: "  $54.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+    {
+      imgUrl:
+        "https://www.rodanandfields.com/en-us/medias/RCDMF50-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDYyN3xpbWFnZS9qcGVnfGltYWdlcy9oMjYvaDYzLzEzNjE1ODcyMjEzMDIyLmpwZ3xmYWJlZGQ0ZDc0ZmUwYzUwNWM3ODMyZGUyZDlkZjA1NjBmZDMxZmU0ZDlmZjdkNDQwZDhkNWVmOGQ4YjlmYTQ3",
+      name: "RECHARGE Detox Mask",
+      price: "$60.00 |",
+      strikedOffPrice: " $54.00 With",
+      pc: "PC PERKS",
+      button: "ADD TO BAG",
+    },
+  ];
+
+  img.map(function (elem, index, array) {
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.imgUrl);
+    img.setAttribute("id", "img_102");
+
+    var name = document.createElement("h4");
+    name.innerText = elem.name;
+    name.setAttribute("id", "style1_102");
+
+    var role = document.createElement("p");
+    role.innerText = elem.price;
+    role.setAttribute("id", "style2_102");
+
+    var role1 = document.createElement("p");
+    role1.innerText = elem.strikedOffPrice;
+    role1.setAttribute("id", "style3_102");
+
+    var role2 = document.createElement("p");
+    role2.innerText = elem.pc;
+    role2.setAttribute("id", "style4_102");
+
+    var button = document.createElement("button");
+    button.innerText = elem.button;
+
+    button.setAttribute("id", "button_102");
+
+    div.append(img, name, role, role1, role2, button);
+    document.querySelector("#container_102").append(div);
+  });
+</script>

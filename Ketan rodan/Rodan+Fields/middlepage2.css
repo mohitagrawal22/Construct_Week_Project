@@ -1,0 +1,113 @@
+#container84 {
+  height: 600px;
+  width: 220%;
+  background-color: #f9f6f4;
+  /* border: 1px solid blue; */
+  display: flex;
+}
+
+.main83 {
+  height: 90%;
+  width: 320px;
+  background-color: white;
+  /* border: 1px solid rgba(255, 94, 0, 0.5); */
+  margin: 15px 5px;
+  text-align: center;
+}
+#img81 {
+  height: 40%;
+  width: 250px;
+}
+
+#img82 {
+  height: 40%;
+  width: 250px;
+}
+
+h4 {
+  text-align: left;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #222;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin: 9px 0 20px;
+  height: 36px;
+  overflow: hidden;
+  position: relative;
+  padding-left: 7px;
+}
+
+#info75 {
+  text-align: left;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-size: 14px;
+  /* font-weight: 400; */
+  color: #222;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin: 9px 0 20px;
+  height: 36px;
+  overflow: hidden;
+  position: relative;
+  padding-left: 7px;
+}
+
+#button76 {
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  width: 280px;
+  height: 40px;
+  background-color: white;
+  margin-top: 30px;
+}
+#left77 {
+  height: 90%;
+  width: 320px;
+  background-color: #f9f6f4;
+  /* border: 1px solid rgba(255, 94, 0, 0.5); */
+  margin: 15px 5px;
+}
+
+#up1_78 {
+  height: 60%;
+  width: 230px;
+  /* border: 1px solid blue; */
+  font-size: 20px;
+  padding: 10px 25px;
+  margin-bottom: -30px;
+}
+
+#down1_79 {
+  /* height: 50%;
+  width: 500px; */
+  padding-top: 5px;
+  /* border: 2px solid black; */
+  padding-left: 10px;
+}
+
+/* #lefth1 {
+  text-align: left;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin: 9px 0 20px;
+  height: 36px;
+} */
+#retail80 {
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  font-size: 12px;
+  line-height: 5px;
+  text-align: left;
+  padding-left: 7px;
+}
+#price81 {
+  margin-bottom: 1px;
+  font-family: ProximaNovaRegular, Arial, Sans-Serif;
+  text-align: left;
+  padding-left: 7px;
+}
