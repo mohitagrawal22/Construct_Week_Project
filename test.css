@@ -1,0 +1,36 @@
+.w{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.w img{
+    width: 400px;
+    height: auto;
+}
+.x{
+    /* border: 1px solid black; */
+    width: 1000px;
+    height: 398px;
+    background-color: aliceblue;
+    
+}
+.y{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.y img{
+    width: 400px;
+    height: auto;
+    margin-top: -5px;
+}
+.e{
+
+    width: 1000px;
+    height: 398px;
+    background-color: aliceblue;
+    margin-top: -5px;
+}
