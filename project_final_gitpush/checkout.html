@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,200&display=swap" rel="stylesheet"> -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,400;1,200;1,500;1,600&display=swap" rel="stylesheet">
+    <style>
+        
+        #container228{
+            /* display: block; */
+            height: 400px;
+            width: 530px;
+            border: 1px solid rgb(19, 18, 18);
+            margin: auto;
+            margin-top: 30px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            font-family: 'Roboto Serif', sans-serif;
+            padding-left: 60px;
+            padding-top: 25px;
+        
+        }
+        #divname228{
+            margin: auto;
+            margin-top: 20px;
+            height: 70px;
+            font-size: 16px;
+        }
+        #divemail228{
+            margin: auto;
+            /* margin-bottom: 20px; */
+            height: 70px;
+            font-size: 16px;
+        }
+        #divaddress228{
+            margin: auto;
+            /* margin-bottom: 20px; */
+            height: 70px;
+            font-size: 16px;
+        }
+        #divmobile228{
+            margin: auto;
+            /* margin-bottom: 20px; */
+            height: 70px;
+            font-size: 16px;
+        }
+        #name228{
+            display: block;
+            /* margin: auto; */
+            width: 450px;
+            padding: 7px ;
+            font-size: 16px;
+            outline: none;
+            border: 0ch;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        #email228{
+            display: block;
+            /* margin: auto; */
+            width: 450px;
+            margin-bottom: 10px;
+            padding: 7px ;
+            font-size: 16px;
+            outline: none;
+            border: 0ch;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        #address228{
+            display: block;
+            /* margin: auto; */
+            padding: 7px ;
+            font-size: 16px;
+            width: 450px;
+            margin-bottom: 24px;
+            outline: none;
+            border: 0ch;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        #mobile228{
+            display: block;
+            /* margin: auto; */
+            padding: 7px ;
+            font-size: 16px;
+            width: 450px;
+            margin-bottom: 38px;
+            outline: none;
+            border: 0ch;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid black;
+            
+        }
+        #button228{
+            display: block;
+            /* margin: auto; */
+            margin-bottom: 10px;
+            padding: 9px 176px;
+            background-color: black;
+            border: 1px soli rgb(14, 9, 9);
+            border-radius: 5px;
+
+        }
+        #atag228{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            
+
+        }
+        
+
+
+    </style>
+</head>
+<body style="background-color:#ffffff#fffwhitehsl(0,0%,100%)rgb(255,255,255)">
+     <h2 style="margin-left:315px;margin-bottom: -15px;margin-top: 30px;">DELIVERY ADDRESS</h2>
+    <div id="container228">
+       <div id="divname228"> Name<input id="name228" type="text" placeholder="enter full name"></div>
+       <div id="divemail228">Email<input id="email228" type="email" placeholder="email"></div>
+       <div id="divaddress228">Adress<input id="address228" type="text" placeholder="Shipping Address"></div>
+       <div id="divmobile228">Mobile No.<input id="mobile228" type="number" placeholder="Moblie No"></div> 
+      
+       
+       
+       
+       <!-- <input type="submit"> -->
+       <button id="button228" onclick="submitButton()" >
+         <a id="atag228" href="payment.html">Continue Payment</a></button>
+
+
+       <!-- <a id="atag228" onclick="submitButton" href="masaischool.com">Continue Payment</a> -->
+    </div>
+
+</body>
+</html>
+<script>
+//    document.querySelector("submitForm").addEventListener("submit", shippingAdress)
+    
+    function submitButton(){
+        event.preventDefault
+        var name = document.querySelector("#name228").value
+        var email = document.querySelector("#name228").value
+        var address = document.querySelector("#address228").value
+        var mobile = document.querySelector("#mobile228").value
+        console.log(name, email, address, mobile)
+
+    }
+    
+
+</script>

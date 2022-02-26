@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+       #container200 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 400px);
+        width: 78%;
+        margin: auto;
+        gap:5px;
+        /* border: 1px solid red; */
+       font-family: sans-serif;
+      
+      }
+      #button200{
+          /* width: 290px; */
+          /* height: 50px; */
+          padding: 11px 76px;
+          border: solid black 1px;
+          font-size: 13px;
+          margin-top: 10px;
+          margin-left: 15px;
+          margin-left: 35px;
+          background-color: white;
+          
+      }
+      #img200{
+          /* display: flex; */
+         height: 240px;
+         width: 260px;
+         padding-bottom: 5px;
+         margin-left: 18px;
+             
+      }
+      #style1200{ 
+        overflow: hidden;
+          text-align: center;
+          font-size: 14.3px;
+          font-weight:400;
+          margin: auto;
+          margin-bottom: 21px;
+          font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+          /* margin-left: -40px; */
+          padding-bottom: 5px;
+      }
+      #style2200{
+          text-align: center;
+          /* margin: auto; */
+          /* justify-content: center; */
+          margin-top: 50px;
+       
+          font-size: 13px;
+          /* font-weight:0; */
+          display: inline;
+          
+          margin-left: 50px;
+          margin-bottom: 5px;
+          color: rgb(141, 140, 140);
+          
+      }
+      #style3200{
+          display: inline;
+          text-align: center;
+          font-size: 13px;
+          color: rgb(141, 140, 140);
+          margin-left: 10px;
+  
+          
+      }
+      #style4200{
+          color: rgb(118, 205, 255);
+          display: inline;
+          font-size: 11.8px;
+          font-weight: bold;
+          margin-left: 4px;
+      }
+
+      #h2200{
+          text-align: center;
+          font-size: 27px;
+          font-weight: 500;
+        
+      }
+       #para200{
+         text-align: justify;
+         text-align: center; 
+      } 
+      #ram200{
+          width: 50%;
+          text-align: center;
+          margin: auto;
+          font-family: sans-serif;
+          font-size: 14px;
+          color: gray;
+      }
+      
+      
+
+      
+    </style>
+  </head>
+  <body>
+
+   <h1 id="h2200">ACNE & BREAKOUTS</h1>
+  
+     
+    <div id="ram200">
+        <p id="para200">Genetics, stress and hormones can all trigger breakouts. Our targeted treatments help clear and prevent acne blemishes.</p>
+       </div>
+        <div id="container200">
+    </div>
+  </body>
+</html>
+
+<script>
+
+    var img = [
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
+        name:"UNBLEMISH Regimen",
+        price:"$190.00 |",
+        strikedOffPrice:"$171.00 with",
+        pc: "PC PERKS",
+        button:"SHOP NOW "
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNRMF50-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MTg2NnxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaDk2LzEzNjE1ODgxMzg4MDYyLmpwZ3w0ZGE1ZWNiZWI1OTdiYmFkMjY3ZWU3ZWVmMDBkZjdlOWYzMDY4MGUwYWE4NTZiZTZjN2M3YjUxN2M2NmYxYjhk",
+        name:"UNBLEMISH Clarifying Mask",
+        price:"$60.00 |",
+        strikedOffPrice:"$54.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNWA125-Regimen-Explainer-Step1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w0Mjg3NHxpbWFnZS9wbmd8aW1hZ2VzL2gxNS9oZmIvMTM0MjgwMzAyMTAwNzgucG5nfDhkMWI4OTZmN2Y4YmE3NTQ4ZjJjZGEyN2ZkYjVhOWU4MTZkYTIwZjFhZmI3YzhmZGRjZWQyNDc0YmY4YThiMmE",
+        name:"UNBLEMISH Refining Acne Wash",
+        price:"$45.00 |",
+        strikedOffPrice:"$40.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNTJ125-Regimen-Explainer-Step2-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w0ODM1NnxpbWFnZS9wbmd8aW1hZ2VzL2hiNi9oNDIvMTM0MjgwMzEwNjIwNDYucG5nfGQ4YTdmOTk3NmZmMTgyZGQ5MTk5MmU5YzllNzBiZmNjNzBmOWJiODgwYzVhMzgyNDg0ODQ3NjY0MjA1YWMwZTE",
+        name:"UNBLEMISH Clarifying Toner",
+        price:"$50.00  |" ,
+        strikedOffPrice:"$45.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNTT030-Regimen-Explainer-Step3-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w1Nzc0NXxpbWFnZS9wbmd8aW1hZ2VzL2hiMC9oN2YvMTM0MjgwMzE0NTUyNjIucG5nfDEyMGNkZjQ0MWI1Y2UzNjA1Y2UzNzcxMTE0NjU0YjJiMWQ0NWQ3NThkYzZmMTdjOGY3YWM0ZTFiNjBiZmNkODg",
+        name:"UNBLEMISH Dual Intensive Acne Treatment",
+        price:"$105.00 |",
+        strikedOffPrice:"$94.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    }
+    ,
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HUNRGTRF-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w5NTM5MnxpbWFnZS9qcGVnfGltYWdlcy9oY2YvaDhjLzEzOTc3NjU3OTY2NjIyLmpwZ3xkYzVkYmZhM2IyYmU1ZmFiZWI5NTMxYjQxYzhkZDNlNDMxMDYzNmFiZDg5NzUzNTc5NDI4NDllYWY0YzEzNmIz",
+        name:"UNBLEMISH + Total RF Serum Special",
+        price:"$328.00 |",
+        strikedOffPrice:"$295.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HUNRJLP1-UNWA125-UNTJ125-UNTT030-UNSS030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0ODE5MHxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDk1LzEyNzcxNTkwODk3Njk0LmpwZ3w3ZDQ4ZDYzNjI0ZjI3YmU1MjhmOTI0N2QyYzYwNmVkZjY3YTc5MzdlNDBhMGJhN2I5NTRmNDZhYWE2M2NmNDY0",
+        name:"RECHARGE + Lash Boost Special",
+        price:"$312.00 |",
+        strikedOffPrice:"$280.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HUNXPSEG-UNWA125-UNTJ125-UNTT030-UNSS030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MjkxNHxpbWFnZS9qcGVnfGltYWdlcy9oYjgvaGYyLzEyNzcxNTkzMTI1OTE4LmpwZ3wxNzY4MjI4ZjYwNWJjNWE1ZTc4MjIyNzRkNTJjYjM0NGUxNTNmNDg3YWY2NzU3YTU1MDg4ODE2ODQ5NjU4MTRm",
+        name:"UNBLEMISH Power Up Special",
+        price:"$398.00 |",
+        strikedOffPrice:"$358.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/spotless-regimen-UNRS001.jpg?context=bWFzdGVyfGltYWdlc3wxOTY4NHxpbWFnZS9qcGVnfGltYWdlcy9oM2QvaGU3LzEzODE0NjU0MzA0Mjg2LmpwZ3xjNGJiOWMyMDczMDlmMzU4OWRjM2FiNjhkNjgxY2QyYzY1ZjI1NzNlY2NlNWZmMGE1NWZjNTUxMjNkOGIzY2Q3",
+        name:"SPOTLESS Regimen",
+        price:"$89.00 |",
+        strikedOffPrice:"$80.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNSW125-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTYwOTJ8aW1hZ2UvanBlZ3xoZTEvaDUyLzg4MjE4NjUwMjE0NzAuanBnfGQ3MmQzM2E2YTA0ZjE5OWZmODIxYjAxNGEyZjIyODRkNzBiZjQwNzc4MmNmYWZkYjVlOTRmZDViMTEwZTNjNzE",
+        name:"SPOTLESS Daily Acne Wash",
+        price:"$34.00 |",
+        strikedOffPrice:"$30.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNST030-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTc4Mzl8aW1hZ2UvanBlZ3xoNTEvaGVkLzg4MjE4NjQ5NTU5MzQuanBnfDY3ZjE3NzVkYTA1NjNhYzY1ZWZiZDNiZDg0MTllZTkyYmY1NzAxMTRlODQxODYwY2IyMjYyZWU0OTkwMzRjYWQ",
+        name:"SPOTLESS Acne Clearing Treatment",
+        price:"$78.00 |",
+        strikedOffPrice:"$70.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    }
+    ,
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/TAXPSEG-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wyMDEyOHxpbWFnZS9qcGVnfGltYWdlcy9oNDYvaDkwLzkxNzEyNDU5ODk5MTguanBnfGQ0N2UwNGZhOGUzNjAyYzM1Y2I2NjI4ZGY2NjczYzZkYWQ2OTVhY2Q3YmIwMWI1NjFkNjQ3ZmJmZWJkMWY0MmY",
+        name:"SPOTLESS Power Up Special",
+        price:"$297.00 |",
+        strikedOffPrice:"$267.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    }
+
+
+]
+
+img.map(function (elem, index, array) {
+
+var div = document.createElement("div");
+var img = document.createElement("img");
+img.setAttribute("src", elem.imgUrl);
+img.setAttribute("id","img200")
+
+var name = document.createElement("h4");
+name.innerText = elem.name;
+name.setAttribute("id","style1200")
+
+var role = document.createElement("p");
+role.innerText = elem.price; 
+role.setAttribute("id","style2200")
+
+var role1 = document.createElement("p");
+role1.innerText = elem.strikedOffPrice;
+role1.setAttribute("id","style3200")
+
+var role2 = document.createElement("p");
+role2.innerText = elem.pc;
+role2.setAttribute("id","style4200")
+
+
+var button=document.createElement("button");
+button.innerText=elem.button;
+
+
+button.setAttribute("id","button200")
+
+
+
+    div.append(img, name, role, role1,role2,button);
+    document.querySelector("#container200").append(div);
+  });
+</script>
