@@ -118,7 +118,35 @@ function addtocart(elem){
 }
 
 }
+function sortItems(){
+    var sorting=document.getElementById("sorter").value;
+    console.log(sorting)
+    if(sorting =='h2l'){
+   data.sort(function(a,b){
+     return b.price-a.price;
+   })
+      
+    }
+    if(sorting =='l2h'){
+   data.sort(function(a,b){
+     return a.price-b.price;
+   })
 
+    }
+    displaydata(data)
+
+  }
+  var search =document.getElementById("search").addEventListener("keyup",search);
+
+  function search(){
+    var searchText=document.getElementById("search").value;
+    console.log(searchText);
+    var filterdata=data.filter(function(elem,index){
+                 return elem.text.includes(searchText);
+    })
+    displaydata(filterdata);
+    document.getElementById("items").textContent = filterdata.length;
+  }
 
 
 
