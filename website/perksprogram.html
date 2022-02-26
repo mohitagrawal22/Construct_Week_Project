@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .avatar380{
+    font-family: RFFontRoman,Arial,Sans-Serif;
+    font-size: 4.2rem;
+    font-weight: normal;
+    color: #55565a;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    
+}
+.text381{
+text-align:center;
+margin:auto;
+width:60%;
+font-size: 1.2rem;
+font-family:  HCoGothamSSmRegular,Arial,Sans-Serif;;
+font-weight: normal;
+line-height: normal;
+letter-spacing: normal;
+margin-bottom:100px;
+}
+#container382{
+            width:80%;
+            height:600px;
+            display:flex;
+            gap:30px;
+            margin:auto;
+        }
+        #price383{
+        
+            
+            text-align:center;
+        
+
+        }
+        .box384{
+            text-align:center;
+        }
+        img{
+            width:100%;
+            height:390px;
+        }
+        /* .tag{
+            text-align:center;
+            width:50%;
+            font-family: RFFontRoman,Arial,Sans-Serif;
+            font-weight: normal;
+            line-height: normal;
+             letter-spacing: normal;
+        } */
+        #container386{
+            width:80%;
+            height:600px;
+            display:flex;
+            gap:30px;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="avatar380">PC PERKS</h1>
+    <p class="text381">Save money, enjoy free shipping and get a free gift ($50+ retail price) with your 2nd order when you match with a Consultant and become a Preferred Customer (PC). All for a one-time fee of $19.95. Between discounts + free shipping, the membership pays for itself!</p>
+    <div id="container382">
+        
+    </div>
+
+    <div id="container386">
+        
+    </div>
+</body>
+</html>
+<script>
+     var data = [
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/20-PC-Perks-LP-Desktop-US-04.jpg?context=bWFzdGVyfHJvb3R8MTI1MDl8aW1hZ2UvanBlZ3xoZjMvaGQ3LzExMDA0MzY2OTEzNTY2LmpwZ3xkMWRmNjQ0MDhmMTg3ZThlZmE3OWNjMmQ3YjQ3ODY3NWIzYmJiNmI1ZGQ5ZGQxODFkYWU3ZmYwZjkyMmQ0ZjA0",
+        name:"OFFERS + REWARDS",
+        price:"Get exclusive access to personalized offers + rewards",
+        
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/20-PC-Perks-LP-Desktop-US-05.jpg?context=bWFzdGVyfHJvb3R8MTAwNzl8aW1hZ2UvanBlZ3xoOWEvaGVkLzExMDA0MzY2OTc5MTAyLmpwZ3xiNDQ3NjE1NWIwMDY1MTI1N2RjMjk0Y2FhNTYxMDk1N2M4YjA2MjA1OTgwZTcyMTg3Y2E0ODM5Y2NlN2M0MjE4",
+        name:"FLEX SUBSCRIPTION",
+        price:"Get convenient delivery of your subscription cart every 60 days",
+        
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/20-PC-Perks-LP-Desktop-US-06.jpg?context=bWFzdGVyfHJvb3R8MTIwNzh8aW1hZ2UvanBlZ3xoNDcvaDgyLzExMDA0MzY3MDQ0NjM4LmpwZ3wxZDZlYzA0MTc3M2I4OWY2NDU5NTZkMTA5ZGNkYTFkODRhOWZlM2FmOTQ3YTEyNzgyNjhkYzI5YWJjODE1M2Zj",
+        name:"CONSULTANT",
+        price:"Get personalized recommendations, advice, help & more",
+        
+    },
+    
+]
+data.map(function(elem,index,array){
+    var div = document.createElement("div");
+    div.setAttribute("class","box384");
+    var image = document.createElement("img");
+    image.setAttribute("src",elem.imgUrl);
+    var tag = document.createElement("h2");
+    tag.innerText=elem.name
+    var div2 = document.createElement("div");
+    div2.setAttribute("id","price383");
+     var price=document.createElement("p");
+     price.innerText=elem.price;
+
+     div2.append(price);
+    div.append(image,tag,div2)
+    document.querySelector("#container386").append(div);
+})
+
+
+var data1 = [
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/20-PC-Perks-LP-Desktop-US-01.jpg?context=bWFzdGVyfHJvb3R8MTAzOTV8aW1hZ2UvanBlZ3xoZWEvaGU1LzExMDA0MzY2NzE2OTU4LmpwZ3xkOTYyNTBmYjVmNDkwYzNhNDJiMDljMTU2OTFkZWZiZTkwNTMwOWUyMDZhZjE1YjU2MGJmYjVkYzZmYzkwMWFk",
+        name:"10% OFF",
+        price:"Get 10% off every order, starting with your first",
+        
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/20-PC-Perks-LP-Desktop-US-02.jpg?context=bWFzdGVyfHJvb3R8OTMwOHxpbWFnZS9qcGVnfGhmZC9oMGMvMTEwMDQzNjY3ODI0OTQuanBnfDdmMzUyNGIxZDAwMjkxNmNiNjJmYWUwYzA2NjllNDFlNTNhYTMyYzBiYjA3ZjFlNWIwNGYwY2Q3NDFiMjBkOGM",
+        name:"FREE SHIPPING",
+        price:"Get free shipping on orders $80+",
+        
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/20-PC-Perks-LP-Desktop-US-03.jpg?context=bWFzdGVyfHJvb3R8MTIyMDF8aW1hZ2UvanBlZ3xoZTIvaDViLzExMDA0MzY2ODQ4MDMwLmpwZ3w5ZDA3ZWMzY2I4YWFlZGRhNDM1YWRjNzlmODQ4OGFhNmJkMTA3NWMzMTI5OWMwNjQ5MGE3MjZhNGM1MDY5ZTli",
+        name:"FREE PERKS PRESENT",
+        price:"Get a free gift ($50+ retail price) with your 2nd order",
+        
+    },
+    
+]
+data1.map(function(elem,index,array){
+    var div = document.createElement("div");
+    div.setAttribute("class","box384");
+    var image = document.createElement("img");
+    image.setAttribute("src",elem.imgUrl);
+    var tag = document.createElement("h2");
+    tag.innerText=elem.name
+    var div2 = document.createElement("div");
+    div2.setAttribute("id","price383");
+     var price=document.createElement("p");
+     price.innerText=elem.price;
+
+     div2.append(price);
+    div.append(image,tag,div2)
+    document.querySelector("#container382").append(div);
+})
+</script>
