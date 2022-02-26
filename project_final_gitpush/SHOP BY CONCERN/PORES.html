@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+       #container205 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 400px);
+        width: 78%;
+        margin: auto;
+   
+        /* border: 1px solid red; */
+       font-family: sans-serif;
+      
+      }
+      #button205{
+          /* width: 290px; */
+          /* height: 50px; */
+          padding: 11px 76px;
+          border: solid black 1px;
+          font-size: 13px;
+          margin-top: 10px;
+          margin-left: 15px;
+          margin-left: 35px;
+          background-color: white;
+          
+      }
+      #img205{
+          /* display: flex; */
+         height: 240px;
+         width: 260px;
+         padding-bottom: 5px;
+         margin-left: 18px;
+         
+        
+          
+      }
+      #style1205{ 
+        overflow: hidden;
+          text-align: center;
+          font-size: 14.3px;
+          font-weight:400;
+          margin: auto;
+          margin-bottom: 21px;
+          font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+          /* margin-left: -40px; */
+          padding-bottom: 5px;
+      }
+      #style2205{
+          text-align: center;
+          /* margin: auto; */
+          /* justify-content: center; */
+          margin-top: 50px;
+       
+          font-size: 13px;
+          /* font-weight:0; */
+          display: inline;
+          
+          margin-left: 50px;
+          margin-bottom: 5px;
+          color: rgb(141, 140, 140);
+          
+      }
+      #style3205{
+          display: inline;
+          text-align: center;
+          font-size: 13px;
+          color: rgb(141, 140, 140);
+          margin-left: 10px;
+  
+          
+      }
+      #style4205{
+          color: rgb(118, 205, 255);
+          display: inline;
+          font-size: 11.8px;
+          font-weight: bold;
+          margin-left: 4px;
+      }
+
+      #h2205{
+          text-align: center;
+          font-size: 27px;
+          font-weight: 500;
+        
+      }
+       #para205{
+         text-align: justify;
+         text-align: center; 
+      } 
+      #ram205{
+          width: 50%;
+          text-align: center;
+          margin: auto;
+          font-family: sans-serif;
+          font-size: 14px;
+          color: gray;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+   <h1 id="h2205">PORES & BLACKHEADS</h1>
+   
+    <div id="ram205">
+        <p id="para205">Clogged pores, blackheads + congestion can lead to enlarged pores and breakouts. Help keep skin clean, clear and healthy-looking with our targeted products.</p>
+       </div>
+        <div id="container205">
+    </div>
+  </body>
+</html>
+
+<script>
+
+    var img = [
+        {
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/XTPCS01-Regimen-Explainer-Pore-Cleansing-MD-System-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyNTc5NXxpbWFnZS9wbmd8aW1hZ2VzL2gyOC9oMjkvMTQ2MDQwOTU3ODI5NDIucG5nfGYxY2EwZWMyODQxNTM0MTE5ODRmOTlkZjZmYTY5MzE2MDZjNjE5NmZmMjE4M2U1NTNmODE3ZDJhMWI3ZTM1Y2E",
+    name:"Pore Cleansing MD System",
+    price:"$260.00 |",
+    strikedOffPrice:"$234.00 with",
+    pc: "PC PERKS",
+    button:"SHOP NOW "
+},{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/RCXPSEG-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxNzc1M3xpbWFnZS9qcGVnfGltYWdlcy9oMDUvaGIyLzkxNzEyNDQwODkzNzQuanBnfGU4YTdjMzZjMWY0MGE5MGJlODI5YTI5ZmM1YmI2MDE0MGU1YjI5YjIzZDE3Zjg4MTMzM2VmZGMyOTI3ZTJmNTQ",
+    name:"RECHARGE Power Up Special",
+    price:"$342.00 |",
+    strikedOffPrice:"$307.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+},{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/TAXPSEG-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wyMDEyOHxpbWFnZS9qcGVnfGltYWdlcy9oNDYvaDkwLzkxNzEyNDU5ODk5MTguanBnfGQ0N2UwNGZhOGUzNjAyYzM1Y2I2NjI4ZGY2NjczYzZkYWQ2OTVhY2Q3YmIwMWI1NjFkNjQ3ZmJmZWJkMWY0MmY",
+    name:"SPOTLESS Power Up Special",
+    price:"$297.00 |",
+    strikedOffPrice:"$267.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+},
+{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/XTGTPS2-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3w0NDE5MnxpbWFnZS9qcGVnfGltYWdlcy9oN2UvaDIwLzkxNzEyNDcyNjc4NzAuanBnfDAxNTY5NTcxN2JjODM5Njg1NDU0ZTFkYWFkY2E5MmZhYmExNWNmZWI1MzU3ZDNkMTEyNzkyYjZmMTMyNTc3Yzg",
+    name:"Pore Cleansing Tips (8-Pack)",
+    price:"$35.00  |" ,
+    strikedOffPrice:"$31.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+},
+{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/SOMO050-Regimen-Explainer-Step3-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w1MzU5MXxpbWFnZS9wbmd8aW1hZ2VzL2gyMi9oZjkvMTM0MjgwMjc2NTQxNzQucG5nfGUzMTdjNzk3MzgyZmY1YWRlNjA3YWIzMmM4ZDZhYjhiYmY5N2IyZDRlNWZlYTZhNjE3ZDFmNzQ0ZjJjODIwMjE",
+    name:"Blackhead Removal Tips (8-Pack)",
+    price:"$35.00 |",
+    strikedOffPrice:"$31.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+}
+,
+{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/XTSPS01-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMjIzN3xpbWFnZS9qcGVnfGltYWdlcy9oMTAvaDUzLzkxNzEyNDkzMzIyNTQuanBnfDEwODQwMjA4OGRhMjExMGVlYzgwZmFkMzc4ZjljZWZjZjYyZDQxZjFiOTdlNjZmZTNiMzMxYjIwNTM3Y2Y1ZGQ",
+    name:"Pore Prep Solution",
+    price:"$32.00 |",
+    strikedOffPrice:"$28.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+},
+
+{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wzOTY1NHxpbWFnZS9qcGVnfGltYWdlcy9oNWMvaDlmLzExODU0MDU2MzkwNjg2LmpwZ3xhOGI1MDZkNjc5NzQ0NDg4Y2NmZDRkZjBkYWZmYzg5MGQ5MzM4NjdkYzAyZGVmODU5NDNkMTJhMmZjMGZiODE3",
+    name:"REDEFINE Power Up Special",
+    price:"$428.00 |",
+    strikedOffPrice:"$384.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+},
+{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/HRBXPSEG-RVWA125-RVTG125-RVTTG50-RVSS050-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0NDA3OHxpbWFnZS9qcGVnfGltYWdlcy9oMDMvaGJkLzEyNzcxNTc4MjQ5MjQ2LmpwZ3w0YjY5Yjg0YWI3ODFjNGZiZDgyYTA2M2YzYTFiYmNjNzcwNjU3NWQwOGQyOGY0MDhjZTgwM2RjMWZlMjUzMjU0",
+    name:"REVERSE Power Up Special",
+    price:"$403.00 |",
+    strikedOffPrice:"$362.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+},
+
+
+
+
+{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/HRVRBLP1-RVWA125-RVTG125-RVTTG50-RVSS050-ENHLSH01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0ODU4NnxpbWFnZS9qcGVnfGltYWdlcy9oYmQvaDYzLzEyNzcxNTgxNzIyNjU0LmpwZ3wzZGRiMDk0ZDAzZjgzOTk1MThkZWEzNGRkOTVjNTk2NTc2MTJiYWY1ODk0Y2YwMmI2NTU2YzVkODgzYTA0YTFk",
+    name:"REVERSE + Lash Boost Special",
+    price:"$318.00 |",
+    strikedOffPrice:"$286.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+},
+
+{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/HUNXPSEG-UNWA125-UNTJ125-UNTT030-UNSS030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MjkxNHxpbWFnZS9qcGVnfGltYWdlcy9oYjgvaGYyLzEyNzcxNTkzMTI1OTE4LmpwZ3wxNzY4MjI4ZjYwNWJjNWE1ZTc4MjIyNzRkNTJjYjM0NGUxNTNmNDg3YWY2NzU3YTU1MDg4ODE2ODQ5NjU4MTRm",
+    name:"UNBLEMISH Power Up Special",
+    price:"$398.00 |",
+    strikedOffPrice:"$358.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+},
+
+{
+    imgUrl:"https://www.rodanandfields.com/en-us/medias/HRVAPS01-RVWA125-RVSS050-RVTTG50-AAAPS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NzcwMXxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDhhLzEyNzcxNTc5ODg3NjQ2LmpwZ3wzOWNmZWJjNjlhMzY1NjkxM2JiOThlMGUwNzJhYjk1NDQzY2E5NGQwNmNhMzIxZThkOTlhODI1YmZhNmUzYWIz",
+    name:"REVERSE AMP It Up Special",
+    price:"$376.00 |",
+    strikedOffPrice:"$338.00 with",
+    pc: "PC PERKS",
+    button:"ADD TO BAG "
+}
+
+]
+
+img.map(function (elem, index, array) {
+
+var div = document.createElement("div");
+var img = document.createElement("img");
+img.setAttribute("src", elem.imgUrl);
+img.setAttribute("id","img205")
+
+var name = document.createElement("h4");
+name.innerText = elem.name;
+name.setAttribute("id","style1205")
+
+var role = document.createElement("p");
+role.innerText = elem.price; 
+role.setAttribute("id","style2205")
+
+var role1 = document.createElement("p");
+role1.innerText = elem.strikedOffPrice;
+role1.setAttribute("id","style3205")
+
+var role2 = document.createElement("p");
+role2.innerText = elem.pc;
+role2.setAttribute("id","style4205")
+
+
+var button=document.createElement("button");
+button.innerText=elem.button;
+
+
+button.setAttribute("id","button205")
+
+
+
+    div.append(img, name, role, role1,role2,button);
+    document.querySelector("#container205").append(div);
+  });
+</script>

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+       #container208 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(28, 470px);
+        width: 78%;
+        margin: auto;
+   
+        /* border: 1px solid red; */
+       font-family: sans-serif;
+      
+      }
+      #button208{
+          /* width: 290px; */
+          /* height: 50px; */
+          padding: 7px 76px;
+          border: solid black 1px;
+          font-size: 13px;
+          margin-top: 10px;
+          margin-left: 15px;
+          margin-left: 35px;
+          background-color: white;
+          border-radius: 3px;
+          
+      }
+      #img208{
+          /* display: flex; */
+         height: 240px;
+         width: 260px;
+         padding-bottom: 5px;
+         margin-left: 18px;
+         
+        
+          
+      }
+      #style1208{ 
+        /* overflow: hidden; */
+          /* text-align: center; */
+          /* margin-right:500px ; */
+          font-size: 13.8px;
+          font-weight:400;
+          margin-left: 35px;
+          margin-bottom: 0px;
+          font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+          /* margin-left: -40px; */
+          padding-bottom: 5px;
+      }
+      #style2208{
+          text-align: center;
+          /* margin: auto; */
+          /* justify-content: center; */
+          margin-top: 50px;
+       
+          font-size: 13px;
+          /* font-weight:0; */
+          display: inline;
+           margin-left: 35px;
+          margin-bottom: 5px;
+          color: rgb(73, 72, 72);
+          
+      }
+      #style3208{
+          /* display: inline; */
+          /* text-align: center; */
+          font-size: 12.5px;
+          color: rgb(141, 140, 140);
+          /* margin-left: 10px; */
+          margin-left: 35px;
+          margin-right: 28px;
+          /* width: 200px; */
+  
+          
+      }
+      #style4208{
+          /* color: rgb(118, 205, 255); */
+          /* display: inline; */
+          font-size: 11.8px;
+          /* font-weight: bold; */
+          margin-left: 35px;
+          margin-top: 1px;
+        
+          width: 200px;
+      }
+
+      #h2208{
+          text-align: center;
+          font-size: 27px;
+          font-weight: 500;
+        
+      }
+       #para208{
+         text-align: justify;
+         text-align: center; 
+      } 
+      #ram208{
+          width: 50%;
+          text-align: center;
+          margin: auto;
+          font-family: sans-serif;
+          font-size: 14px;
+          color: gray;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+   <h1 id="h2208">ESSENTIALS</h1>
+  
+     
+    <div id="ram208">
+        <p id="para208">Our everyday dermatologic necessities for healthy-looking skin.</p>
+       </div>
+        <div id="container208">
+    </div>
+  </body>
+</html>
+
+<script>
+
+    var img = [
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHLSH01-Regimen-Explainer-R-F-Lash-Boost-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxMDc0OHxpbWFnZS9wbmd8aW1hZ2VzL2hmMS9oYWMvMTQ1MzIwNDI1ODgxOTAucG5nfDQyNTQ0OGUzYmMwZTJkM2YzNzE1MjE2NzQ1M2YxMWQ5M2E3ZWQ2MjAwMDA3MzFmNjQyOWUwNDU3OWZmMTkzZDY",
+        name:"R + F Lash Boost",
+        price:"$155",
+        para:"Applied nightly to promote the appearance of longer, stronger and darker-looking  ",
+        rating:"★★★★★ 4.6 (6808) ",
+        button:"ADD TO BAG ",
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY",
+        name:"Total RF Serum",
+        price:"$175",
+        para:"Energizes millions of surface skin cells by 200% to address all key signs of skin aging.  ",
+        rating:"★★★★★  4.5 (2466) ",
+        button:"ADD TO BAG ",
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+        name:"REDEFINE Multi-Function Eye Cream",
+        price:"$70",
+        para:"Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.   ",
+        rating:"★★★★★  4.6 (8348) ",
+        button:"ADD TO BAG ",
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+        name:"REDEFINE Regimen",
+        price:"$220",
+        para:"Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.   ",
+        rating:"★★★★★  4.6 (8348) ",
+        button:"DD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY",
+        name:"REVERSE Regimen",
+        price:"$195 ($245 Value)",
+        para:"REVERSE Regimen  ",
+        rating:"★★★★★  3.8 (1365) ",
+        button:"DD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
+        name:"UNBLEMISH Regimen",
+        price:"$195 ($245 Value)",
+        para:"Helps clear and prevent breakouts while visibly minimizing pores and fine lines.   ",
+        rating:"★★★★★  4.5 (906) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
+        name:"SOOTHE Regimen",
+        price:"$185 ($245 Value)",
+        para:"Protects sensitive skin, reduces visible redness + fortifies skin’s moisture barrier.   ",
+        rating:"★★★★★  4.5 (906) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE",
+        name:"RECHARGE Regimen",
+        price:"$134 ($245 Value)",
+        para:"Defends against lifestyle stressors that leave skin looking dull, blotchy + dehydrated.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+   
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/spotless-regimen-UNRS001.jpg?context=bWFzdGVyfGltYWdlc3wxOTY4NHxpbWFnZS9qcGVnfGltYWdlcy9oM2QvaGU3LzEzODE0NjU0MzA0Mjg2LmpwZ3xjNGJiOWMyMDczMDlmMzU4OWRjM2FiNjhkNjgxY2QyYzY1ZjI1NzNlY2NlNWZmMGE1NWZjNTUxMjNkOGIzY2Q3",
+        name:"SPOTLESS Regimen",
+        price:"$89",
+        para:"Clears existing blemishes + prevents new ones with BPO2 Technology.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA",
+        name:"Active Hydration Serum",
+        price:"$89",
+        para:"Instantly boosts hydration levels by 200% and locks in moisture on skin's surface.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh",
+        name:"Active Hydration Bright Eye Complex",
+        price:"$72",
+        para:" Reduces visible dark circles and under-eye puffiness over time for younger-looking eyes.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5",
+        name:"Rodan + Fields Active Hydration Body Replenish",
+        price:"$66",
+        para:" Instantly and continuously hydrates the body for younger-looking, younger-acting skin.   ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2gyNi9oZjgvMTQ1MzIxNjc2MzA4NzgucG5nfGM0YTc0NjM0YWIzM2QxZDZlOTc0NTdmYjA4M2EyNDA5NGJhODg3ZDQwMGJjZjdiMTZlYTI2MjYwNjI2Y2JhZGE",
+        name:"Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+        price:"$83",
+        para:" Exfoliates away dead skin cells for smoother, vibrant-looking skin after just one use.    ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/brow-defining-boost-light-ENEBS01.jpg?context=bWFzdGVyfGltYWdlc3wyMTU3OXxpbWFnZS9qcGVnfGltYWdlcy9oODgvaDYzLzEzODE0NjU1MDU3OTUwLmpwZ3xjM2M3NGZiODY4OThkOWYxYzRmYTgyYzUzNTFiNDA2NmY1NmFkMGM1YzcyNmFiZWJhMmRjNGIzMWI1NTJiZjc1",
+        name:"Brow Defining Boost",
+        price:"$112",
+        para:" Brow Defining Boost   ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+   
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/DERDS-detail-1-.jpg?context=bWFzdGVyfGltYWdlc3wyOTY1MnxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaGFjLzEzNTMzMTM3Njk4ODQ2LmpwZ3xjOWYzNDA1ZjRiODE0ZTJiMDNiZGIxOTVhZTQ1ZWUwYTI4MDAxYTE4ODRhZDZhYjNlOTE4YTE0ZTcwZDM5NDg5",
+        name:"Brow Defining Boost",
+        price:"$66",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HAAGRLP1-AAWA125-AATN125-AATT030-AAPM030-ENHLSH01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0OTY1NnxpbWFnZS9qcGVnfGltYWdlcy9oY2IvaDg4LzEyNzgwOTE0NTA3ODA2LmpwZ3xlOGNmOTZiYjIyZGIxOTk4NGFhMDJiNDY1YzM0NzNjZjg2NDZiZTBkZTkwN2ZiOGIxZTBhNDQ0OWI5NzQ2ODMw",
+        name:"REDEFINE + Lash Boost Special",
+        price:"$343",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVST015-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTgzNnxpbWFnZS9qcGVnfGltYWdlcy9oMzEvaDNmLzEzNTMzMTc5MjgxNDM4LmpwZ3xhN2I0MzE1YWE0NmUwZDM1MWQ1NjNhYTYzYWI3NDU2OGYyYTRmY2ZjMWYwYjJjMzhkNDZkZWJmNDE4ODJlMmUy",
+        name:"Targeted Dark Spot Corrector",
+        price:"$343",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVST015-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTgzNnxpbWFnZS9qcGVnfGltYWdlcy9oMzEvaDNmLzEzNTMzMTc5MjgxNDM4LmpwZ3xhN2I0MzE1YWE0NmUwZDM1MWQ1NjNhYTYzYWI3NDU2OGYyYTRmY2ZjMWYwYjJjMzhkNDZkZWJmNDE4ODJlMmUy",
+        name:"REDEFINE AMP MD System",
+        price:"$227",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.8 (810) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/IRS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3w0NzYwNXxpbWFnZS9wbmd8aW1hZ2VzL2gzMy9oMmIvMTM3NTgzODU3MTcyNzgucG5nfDU3MDNlODNlMjk0MDZiYWEwODU1NTZhMDg3NDBkNTU4M2EwNGJiY2M1OTZmN2RlMWNlM2UwYmEyZDg5YzViNDM",
+        name:"REDEFINE Intensive Renewing Serum",
+        price:"$102",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.8 (810) ",
+        button:"ADD TO BAG" 
+    },
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AALS060-Regimen-Explainer-Lip-Renewing-Serum-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMzc3M3xpbWFnZS9wbmd8aW1hZ2VzL2hmYi9oNDEvMTQ2MDQwOTM1ODc0ODYucG5nfGIyNTY2ZTJmMTAzMDc4MDhjZTkyYjYwZDI1MWZlNGNlZWQ2ZGIzYzc3ZjkwN2RjZDY3YmU3NDkwNDIyOWUwYWU",
+        name:"REDEFINE Lip Renewing Serum",
+        price:"$58",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HRVAPS01-RVWA125-RVSS050-RVTTG50-AAAPS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NzcwMXxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDhhLzEyNzcxNTc5ODg3NjQ2LmpwZ3wzOWNmZWJjNjlhMzY1NjkxM2JiOThlMGUwNzJhYjk1NDQzY2E5NGQwNmNhMzIxZThkOTlhODI1YmZhNmUzYWIz",
+        name:"REVERSE AMP It Up Special",
+        price:"$376",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HRVAPS01-RVWA125-RVSS050-RVTTG50-AAAPS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NzcwMXxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDhhLzEyNzcxNTc5ODg3NjQ2LmpwZ3wzOWNmZWJjNjlhMzY1NjkxM2JiOThlMGUwNzJhYjk1NDQzY2E5NGQwNmNhMzIxZThkOTlhODI1YmZhNmUzYWIz",
+        name:"REVERSE AMP It Up Special",
+        price:"$376",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HUNRJLP1-UNWA125-UNTJ125-UNTT030-UNSS030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0ODE5MHxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDk1LzEyNzcxNTkwODk3Njk0LmpwZ3w3ZDQ4ZDYzNjI0ZjI3YmU1MjhmOTI0N2QyYzYwNmVkZjY3YTc5MzdlNDBhMGJhN2I5NTRmNDZhYWE2M2NmNDY0",
+        name:"UNBLEMISH + Lash Boost Special",
+        price:"$376",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HUNRJLP1-UNWA125-UNTJ125-UNTT030-UNSS030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0ODE5MHxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDk1LzEyNzcxNTkwODk3Njk0LmpwZ3w3ZDQ4ZDYzNjI0ZjI3YmU1MjhmOTI0N2QyYzYwNmVkZjY3YTc5MzdlNDBhMGJhN2I5NTRmNDZhYWE2M2NmNDY0",
+        name:"UNBLEMISH + Lash Boost Special",
+        price:"$376",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HRBXPSEG-RVWA125-RVTG125-RVTTG50-RVSS050-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0NDA3OHxpbWFnZS9qcGVnfGltYWdlcy9oMDMvaGJkLzEyNzcxNTc4MjQ5MjQ2LmpwZ3w0YjY5Yjg0YWI3ODFjNGZiZDgyYTA2M2YzYTFiYmNjNzcwNjU3NWQwOGQyOGY0MDhjZTgwM2RjMWZlMjUzMjU0",
+        name:"REVERSE Power Up Special",
+        price:"$403",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HRBXPSEG-RVWA125-RVTG125-RVTTG50-RVSS050-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0NDA3OHxpbWFnZS9qcGVnfGltYWdlcy9oMDMvaGJkLzEyNzcxNTc4MjQ5MjQ2LmpwZ3w0YjY5Yjg0YWI3ODFjNGZiZDgyYTA2M2YzYTFiYmNjNzcwNjU3NWQwOGQyOGY0MDhjZTgwM2RjMWZlMjUzMjU0",
+        name:"REVERSE Power Up Special",
+        price:"$403",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AARMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTUyMTd8aW1hZ2UvanBlZ3xoYTUvaDliLzEzNjE1MDM2MTcwMjcwLmpwZ3xhM2U4ZGUyYzhhOGNhOTBiM2I0NjE4YjU1MTM5MjUwMGVhOTJhZjdlNzcwOTU2NmEwMDEwZjNmNmEyNDc1OGUz",
+        name:"REDEFINE Rejuvenation Mask",
+        price:"$60",
+        para:" Instantly moisturizes skin while visibly improving fine lines and wrinkles over time  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVRMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTQ4NzJ8aW1hZ2UvanBlZ3xoYTkvaDRiLzEzNjE2MDEzMjQ2NDk0LmpwZ3w0NGQyYWM2NjM3OGIwNDdmZWYzOGJlZjBjNGMyMjk1MmNhNDY3N2Q1ZDhlZTE5NDlhNDA1ZmM3YTFiNzc5MDli",
+        name:"REVERSE Radiance Mask",
+        price:"$60",
+        para:" Dials up radiance with Retinal-MD Technology and evens skin tone over time.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+    
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNRMF50-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MTg2NnxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaDk2LzEzNjE1ODgxMzg4MDYyLmpwZ3w0ZGE1ZWNiZWI1OTdiYmFkMjY3ZWU3ZWVmMDBkZjdlOWYzMDY4MGUwYWE4NTZiZTZjN2M3YjUxN2M2NmYxYjhk",
+        name:"UNBLEMISH Clarifying Mask",
+        price:"$60",
+        para:"Instantly reduces excessive oil and shine while helping prevent new pimples from forming.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/SORMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTg4MzN8aW1hZ2UvanBlZ3xoOTEvaDUzLzEzNjE1ODc4Mjc1MTAyLmpwZ3wwY2QzZDVmYTIzNDhlYjY1YjMzYWRjN2RkMzJmNzVlNGQxZWM1MTBhZjA1YjgwMzhkMWI4ZTNhMjM5ODRhMmJi",
+        name:"SOOTHE Rescue Mask",
+        price:"$60",
+        para:"Instantly reduces excessive oil and shine while helping prevent new pimples from forming.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RCDMF50-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDYyN3xpbWFnZS9qcGVnfGltYWdlcy9oMjYvaDYzLzEzNjE1ODcyMjEzMDIyLmpwZ3xmYWJlZGQ0ZDc0ZmUwYzUwNWM3ODMyZGUyZDlkZjA1NjBmZDMxZmU0ZDlmZjdkNDQwZDhkNWVmOGQ4YjlmYTQ3",
+        name:"RECHARGE Detox Mask",
+        price:"$60",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTg1OTR8aW1hZ2UvanBlZ3xpbWFnZXMvaGYxL2g1Mi8xMTg1NDA1NTI3NjU3NC5qcGd8NDQ5MmQ3MGJmNzYyY2U4ZGQzNWRmYjJhZWM1ZGMwY2FlMGRiMGY3NmNhMjBjOGI1OTYwNzdiNDY2MmViMTVhZA",
+        name:"REDEFINE Daily Clay Cleanser",
+        price:"$45",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWF125-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTg2NjZ8aW1hZ2UvanBlZ3xpbWFnZXMvaGFjL2hiOC8xMTg1NDA1NjkxNDk3NC5qcGd8MDhiNGM0ZDJmMTliNzhmYjk0ZDJmYzQ4YjhhM2E2YjU2NGE1YzRjZTExNjJmYzU3ZjFmNTc3MmE3N2UyNTMwNw",
+        name:"REDEFINE Daily Foaming Cleanser",
+        price:"$45",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AATN125-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTk1ODd8aW1hZ2UvanBlZ3xpbWFnZXMvaGFkL2hmMi8xMTg1NDA1MzMxMDQ5NC5qcGd8Njg0OTgyMDU0NGI3MDhkNDY5OWZmMWI2YTYxMTg3OWZhODM5NTk3MTBjNTVlOTdiMTQ4YWE4ZmUzMWZkZDg4OA",
+        name:"REDEFINE Pore Refining Toner",
+        price:"$45",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AATT030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wyMDczNjR8aW1hZ2UvanBlZ3xpbWFnZXMvaGIyL2gyMS8xMTg1NDA1NDM5MTgzOC5qcGd8MjZkNzAxMTI1YTBiMjgzZjNmMTIyMjA0NWE1ZTFmZjcyZDNjY2Y1OTU2MjNmNjY5ZDEyNGMwNzM4OTU3MDEyNw",
+        name:"REDEFINE Triple Defense Cream Broad",
+        price:"$90",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AATT030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wyMDczNjR8aW1hZ2UvanBlZ3xpbWFnZXMvaGIyL2gyMS8xMTg1NDA1NDM5MTgzOC5qcGd8MjZkNzAxMTI1YTBiMjgzZjNmMTIyMjA0NWE1ZTFmZjcyZDNjY2Y1OTU2MjNmNjY5ZDEyNGMwNzM4OTU3MDEyNw",
+        name:"REDEFINE Triple Defense Cream Broad",
+        price:"$90",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAPM030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTIzODl8aW1hZ2UvanBlZ3xpbWFnZXMvaDEzL2g4Ni8xMTg1NDA1MTYwNjU1OC5qcGd8MmM0ZmI0YjBlOGU4NzBiM2QzMGVjMDhhNGZkZGI0MTQzYzgxZDhiNTA3MzgyYzIzYzVjNmE0MTBjYzFmNjQ1Mw",
+        name:"REDEFINE Triple Defense Cream Broad",
+        price:"$90",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAPL030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTk1NjF8aW1hZ2UvanBlZ3xpbWFnZXMvaDkxL2hjZi8xMTg1NDA1MDYyMzUxOC5qcGd8NGJkY2YyMzM0Y2MzMmYyNjQ3ODQ0ZjhhNDgxMmZkYmFjNDgzNGI5YjcyYmY3YjM1MjkwODBjYmVkOTBjMzhlMw",
+        name:"REDEFINE Triple Defense Cream Broad",
+        price:"$90",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVWA125-Regimen-Explainer-Step1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w0MjA3MnxpbWFnZS9wbmd8aW1hZ2VzL2g0Ny9oMzMvMTM0MjgwMjQ0MTAxNDIucG5nfDc1OTM3NDUzOTMyNWQxMzQ1YjhiM2NkMTlhMzk2OWU0MWZmMDhjZjQ1YmMxYjBhNTBhZjk0NzRkOTYwNjIyZjU",
+        name:"REDEFINE Triple Defense Cream Broad",
+        price:"$90",
+        para:"Buffs and micro-refinishes the skin’s surface for more even texture. ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+    
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HUNRJLP1-UNWA125-UNTJ125-UNTT030-UNSS030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0ODE5MHxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDk1LzEyNzcxNTkwODk3Njk0LmpwZ3w3ZDQ4ZDYzNjI0ZjI3YmU1MjhmOTI0N2QyYzYwNmVkZjY3YTc5MzdlNDBhMGJhN2I5NTRmNDZhYWE2M2NmNDY0",
+        name:"UNBLEMISH + Lash Boost Special",
+        price:"$376",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HRBXPSEG-RVWA125-RVTG125-RVTTG50-RVSS050-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0NDA3OHxpbWFnZS9qcGVnfGltYWdlcy9oMDMvaGJkLzEyNzcxNTc4MjQ5MjQ2LmpwZ3w0YjY5Yjg0YWI3ODFjNGZiZDgyYTA2M2YzYTFiYmNjNzcwNjU3NWQwOGQyOGY0MDhjZTgwM2RjMWZlMjUzMjU0",
+        name:"REVERSE Power Up Special",
+        price:"$403",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HRBXPSEG-RVWA125-RVTG125-RVTTG50-RVSS050-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0NDA3OHxpbWFnZS9qcGVnfGltYWdlcy9oMDMvaGJkLzEyNzcxNTc4MjQ5MjQ2LmpwZ3w0YjY5Yjg0YWI3ODFjNGZiZDgyYTA2M2YzYTFiYmNjNzcwNjU3NWQwOGQyOGY0MDhjZTgwM2RjMWZlMjUzMjU0",
+        name:"REVERSE Power Up Special",
+        price:"$403",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AARMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTUyMTd8aW1hZ2UvanBlZ3xoYTUvaDliLzEzNjE1MDM2MTcwMjcwLmpwZ3xhM2U4ZGUyYzhhOGNhOTBiM2I0NjE4YjU1MTM5MjUwMGVhOTJhZjdlNzcwOTU2NmEwMDEwZjNmNmEyNDc1OGUz",
+        name:"REDEFINE Rejuvenation Mask",
+        price:"$60",
+        para:" Instantly moisturizes skin while visibly improving fine lines and wrinkles over time  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVRMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTQ4NzJ8aW1hZ2UvanBlZ3xoYTkvaDRiLzEzNjE2MDEzMjQ2NDk0LmpwZ3w0NGQyYWM2NjM3OGIwNDdmZWYzOGJlZjBjNGMyMjk1MmNhNDY3N2Q1ZDhlZTE5NDlhNDA1ZmM3YTFiNzc5MDli",
+        name:"REVERSE Radiance Mask",
+        price:"$60",
+        para:" Dials up radiance with Retinal-MD Technology and evens skin tone over time.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+    
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNRMF50-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MTg2NnxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaDk2LzEzNjE1ODgxMzg4MDYyLmpwZ3w0ZGE1ZWNiZWI1OTdiYmFkMjY3ZWU3ZWVmMDBkZjdlOWYzMDY4MGUwYWE4NTZiZTZjN2M3YjUxN2M2NmYxYjhk",
+        name:"UNBLEMISH Clarifying Mask",
+        price:"$60",
+        para:"Instantly reduces excessive oil and shine while helping prevent new pimples from forming.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/SORMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTg4MzN8aW1hZ2UvanBlZ3xoOTEvaDUzLzEzNjE1ODc4Mjc1MTAyLmpwZ3wwY2QzZDVmYTIzNDhlYjY1YjMzYWRjN2RkMzJmNzVlNGQxZWM1MTBhZjA1YjgwMzhkMWI4ZTNhMjM5ODRhMmJi",
+        name:"SOOTHE Rescue Mask",
+        price:"$60",
+        para:"Instantly reduces excessive oil and shine while helping prevent new pimples from forming.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RCDMF50-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDYyN3xpbWFnZS9qcGVnfGltYWdlcy9oMjYvaDYzLzEzNjE1ODcyMjEzMDIyLmpwZ3xmYWJlZGQ0ZDc0ZmUwYzUwNWM3ODMyZGUyZDlkZjA1NjBmZDMxZmU0ZDlmZjdkNDQwZDhkNWVmOGQ4YjlmYTQ3",
+        name:"RECHARGE Detox Mask",
+        price:"$60",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTg1OTR8aW1hZ2UvanBlZ3xpbWFnZXMvaGYxL2g1Mi8xMTg1NDA1NTI3NjU3NC5qcGd8NDQ5MmQ3MGJmNzYyY2U4ZGQzNWRmYjJhZWM1ZGMwY2FlMGRiMGY3NmNhMjBjOGI1OTYwNzdiNDY2MmViMTVhZA",
+        name:"REDEFINE Daily Clay Cleanser",
+        price:"$45",
+        para:"Draws impurities + environmental aggressors from skin while moisturizing.  ",
+        rating:"★★★★★  4.7 (571) ",
+        button:"ADD TO BAG" 
+    },
+    
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5",
+        name:"Rodan + Fields Active Hydration Body Replenish",
+        price:"$66",
+        para:" Instantly and continuously hydrates the body for younger-looking, younger-acting skin.   ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2gyNi9oZjgvMTQ1MzIxNjc2MzA4NzgucG5nfGM0YTc0NjM0YWIzM2QxZDZlOTc0NTdmYjA4M2EyNDA5NGJhODg3ZDQwMGJjZjdiMTZlYTI2MjYwNjI2Y2JhZGE",
+        name:"Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+        price:"$83",
+        para:" Exfoliates away dead skin cells for smoother, vibrant-looking skin after just one use.    ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/brow-defining-boost-light-ENEBS01.jpg?context=bWFzdGVyfGltYWdlc3wyMTU3OXxpbWFnZS9qcGVnfGltYWdlcy9oODgvaDYzLzEzODE0NjU1MDU3OTUwLmpwZ3xjM2M3NGZiODY4OThkOWYxYzRmYTgyYzUzNTFiNDA2NmY1NmFkMGM1YzcyNmFiZWJhMmRjNGIzMWI1NTJiZjc1",
+        name:"Brow Defining Boost",
+        price:"$112",
+        para:" Brow Defining Boost   ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+   
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/DERDS-detail-1-.jpg?context=bWFzdGVyfGltYWdlc3wyOTY1MnxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaGFjLzEzNTMzMTM3Njk4ODQ2LmpwZ3xjOWYzNDA1ZjRiODE0ZTJiMDNiZGIxOTVhZTQ1ZWUwYTI4MDAxYTE4ODRhZDZhYjNlOTE4YTE0ZTcwZDM5NDg5",
+        name:"Brow Defining Boost",
+        price:"$66",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HAAGRLP1-AAWA125-AATN125-AATT030-AAPM030-ENHLSH01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0OTY1NnxpbWFnZS9qcGVnfGltYWdlcy9oY2IvaDg4LzEyNzgwOTE0NTA3ODA2LmpwZ3xlOGNmOTZiYjIyZGIxOTk4NGFhMDJiNDY1YzM0NzNjZjg2NDZiZTBkZTkwN2ZiOGIxZTBhNDQ0OWI5NzQ2ODMw",
+        name:"REDEFINE + Lash Boost Special",
+        price:"$343",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVST015-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTgzNnxpbWFnZS9qcGVnfGltYWdlcy9oMzEvaDNmLzEzNTMzMTc5MjgxNDM4LmpwZ3xhN2I0MzE1YWE0NmUwZDM1MWQ1NjNhYTYzYWI3NDU2OGYyYTRmY2ZjMWYwYjJjMzhkNDZkZWJmNDE4ODJlMmUy",
+        name:"Targeted Dark Spot Corrector",
+        price:"$343",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVST015-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTgzNnxpbWFnZS9qcGVnfGltYWdlcy9oMzEvaDNmLzEzNTMzMTc5MjgxNDM4LmpwZ3xhN2I0MzE1YWE0NmUwZDM1MWQ1NjNhYTYzYWI3NDU2OGYyYTRmY2ZjMWYwYjJjMzhkNDZkZWJmNDE4ODJlMmUy",
+        name:"REDEFINE AMP MD System",
+        price:"$227",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.8 (810) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/IRS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3w0NzYwNXxpbWFnZS9wbmd8aW1hZ2VzL2gzMy9oMmIvMTM3NTgzODU3MTcyNzgucG5nfDU3MDNlODNlMjk0MDZiYWEwODU1NTZhMDg3NDBkNTU4M2EwNGJiY2M1OTZmN2RlMWNlM2UwYmEyZDg5YzViNDM",
+        name:"REDEFINE Intensive Renewing Serum",
+        price:"$102",
+        para:"  Delivers instant coverage + promotes naturally smoother skin over time.  ",
+        rating:"★★★★★  4.8 (810) ",
+        button:"ADD TO BAG" 
+    },
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AALS060-Regimen-Explainer-Lip-Renewing-Serum-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMzc3M3xpbWFnZS9wbmd8aW1hZ2VzL2hmYi9oNDEvMTQ2MDQwOTM1ODc0ODYucG5nfGIyNTY2ZTJmMTAzMDc4MDhjZTkyYjYwZDI1MWZlNGNlZWQ2ZGIzYzc3ZjkwN2RjZDY3YmU3NDkwNDIyOWUwYWU",
+        name:"REDEFINE Lip Renewing Serum",
+        price:"$58",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HRVAPS01-RVWA125-RVSS050-RVTTG50-AAAPS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NzcwMXxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDhhLzEyNzcxNTc5ODg3NjQ2LmpwZ3wzOWNmZWJjNjlhMzY1NjkxM2JiOThlMGUwNzJhYjk1NDQzY2E5NGQwNmNhMzIxZThkOTlhODI1YmZhNmUzYWIz",
+        name:"REVERSE AMP It Up Special",
+        price:"$376",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/HRVAPS01-RVWA125-RVSS050-RVTTG50-AAAPS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NzcwMXxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDhhLzEyNzcxNTc5ODg3NjQ2LmpwZ3wzOWNmZWJjNjlhMzY1NjkxM2JiOThlMGUwNzJhYjk1NDQzY2E5NGQwNmNhMzIxZThkOTlhODI1YmZhNmUzYWIz",
+        name:"REVERSE AMP It Up Special",
+        price:"$376",
+        para:"  Visibly smooths lips, reduces the appearance of wrinkles + helps retain natural moisture.  ",
+        rating:"★★★★★  4.7 (2266) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHLSH01-Regimen-Explainer-R-F-Lash-Boost-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxMDc0OHxpbWFnZS9wbmd8aW1hZ2VzL2hmMS9oYWMvMTQ1MzIwNDI1ODgxOTAucG5nfDQyNTQ0OGUzYmMwZTJkM2YzNzE1MjE2NzQ1M2YxMWQ5M2E3ZWQ2MjAwMDA3MzFmNjQyOWUwNDU3OWZmMTkzZDY",
+        name:"R + F Lash Boost",
+        price:"$155",
+        para:"Applied nightly to promote the appearance of longer, stronger and darker-looking  ",
+        rating:"★★★★★ 4.6 (6808) ",
+        button:"ADD TO BAG ",
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY",
+        name:"Total RF Serum",
+        price:"$175",
+        para:"Energizes millions of surface skin cells by 200% to address all key signs of skin aging.  ",
+        rating:"★★★★★  4.5 (2466) ",
+        button:"ADD TO BAG ",
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+        name:"REDEFINE Multi-Function Eye Cream",
+        price:"$70",
+        para:"Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.   ",
+        rating:"★★★★★  4.6 (8348) ",
+        button:"ADD TO BAG ",
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+        name:"REDEFINE Regimen",
+        price:"$220",
+        para:"Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.   ",
+        rating:"★★★★★  4.6 (8348) ",
+        button:"DD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY",
+        name:"REVERSE Regimen",
+        price:"$195 ($245 Value)",
+        para:"REVERSE Regimen  ",
+        rating:"★★★★★  3.8 (1365) ",
+        button:"DD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
+        name:"UNBLEMISH Regimen",
+        price:"$195 ($245 Value)",
+        para:"Helps clear and prevent breakouts while visibly minimizing pores and fine lines.   ",
+        rating:"★★★★★  4.5 (906) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
+        name:"SOOTHE Regimen",
+        price:"$185 ($245 Value)",
+        para:"Protects sensitive skin, reduces visible redness + fortifies skin’s moisture barrier.   ",
+        rating:"★★★★★  4.5 (906) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE",
+        name:"RECHARGE Regimen",
+        price:"$134 ($245 Value)",
+        para:"Defends against lifestyle stressors that leave skin looking dull, blotchy + dehydrated.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+   
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/spotless-regimen-UNRS001.jpg?context=bWFzdGVyfGltYWdlc3wxOTY4NHxpbWFnZS9qcGVnfGltYWdlcy9oM2QvaGU3LzEzODE0NjU0MzA0Mjg2LmpwZ3xjNGJiOWMyMDczMDlmMzU4OWRjM2FiNjhkNjgxY2QyYzY1ZjI1NzNlY2NlNWZmMGE1NWZjNTUxMjNkOGIzY2Q3",
+        name:"SPOTLESS Regimen",
+        price:"$89",
+        para:"Clears existing blemishes + prevents new ones with BPO2 Technology.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA",
+        name:"Active Hydration Serum",
+        price:"$89",
+        para:"Instantly boosts hydration levels by 200% and locks in moisture on skin's surface.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh",
+        name:"Active Hydration Bright Eye Complex",
+        price:"$72",
+        para:" Reduces visible dark circles and under-eye puffiness over time for younger-looking eyes.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5",
+        name:"Rodan + Fields Active Hydration Body Replenish",
+        price:"$66",
+        para:" Instantly and continuously hydrates the body for younger-looking, younger-acting skin.   ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2gyNi9oZjgvMTQ1MzIxNjc2MzA4NzgucG5nfGM0YTc0NjM0YWIzM2QxZDZlOTc0NTdmYjA4M2EyNDA5NGJhODg3ZDQwMGJjZjdiMTZlYTI2MjYwNjI2Y2JhZGE",
+        name:"Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+        price:"$83",
+        para:" Exfoliates away dead skin cells for smoother, vibrant-looking skin after just one use.    ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/brow-defining-boost-light-ENEBS01.jpg?context=bWFzdGVyfGltYWdlc3wyMTU3OXxpbWFnZS9qcGVnfGltYWdlcy9oODgvaDYzLzEzODE0NjU1MDU3OTUwLmpwZ3xjM2M3NGZiODY4OThkOWYxYzRmYTgyYzUzNTFiNDA2NmY1NmFkMGM1YzcyNmFiZWJhMmRjNGIzMWI1NTJiZjc1",
+        name:"Brow Defining Boost",
+        price:"$112",
+        para:" Brow Defining Boost   ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+        name:"REDEFINE Multi-Function Eye Cream",
+        price:"$70",
+        para:"Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.   ",
+        rating:"★★★★★  4.6 (8348) ",
+        button:"ADD TO BAG ",
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+        name:"REDEFINE Regimen",
+        price:"$220",
+        para:"Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.   ",
+        rating:"★★★★★  4.6 (8348) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE",
+        name:"RECHARGE Regimen",
+        price:"$134 ($245 Value)",
+        para:"Defends against lifestyle stressors that leave skin looking dull, blotchy + dehydrated.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+   
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/spotless-regimen-UNRS001.jpg?context=bWFzdGVyfGltYWdlc3wxOTY4NHxpbWFnZS9qcGVnfGltYWdlcy9oM2QvaGU3LzEzODE0NjU0MzA0Mjg2LmpwZ3xjNGJiOWMyMDczMDlmMzU4OWRjM2FiNjhkNjgxY2QyYzY1ZjI1NzNlY2NlNWZmMGE1NWZjNTUxMjNkOGIzY2Q3",
+        name:"SPOTLESS Regimen",
+        price:"$89",
+        para:"Clears existing blemishes + prevents new ones with BPO2 Technology.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA",
+        name:"Active Hydration Serum",
+        price:"$89",
+        para:"Instantly boosts hydration levels by 200% and locks in moisture on skin's surface.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh",
+        name:"Active Hydration Bright Eye Complex",
+        price:"$72",
+        para:" Reduces visible dark circles and under-eye puffiness over time for younger-looking eyes.  ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5",
+        name:"Rodan + Fields Active Hydration Body Replenish",
+        price:"$66",
+        para:" Instantly and continuously hydrates the body for younger-looking, younger-acting skin.   ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2gyNi9oZjgvMTQ1MzIxNjc2MzA4NzgucG5nfGM0YTc0NjM0YWIzM2QxZDZlOTc0NTdmYjA4M2EyNDA5NGJhODg3ZDQwMGJjZjdiMTZlYTI2MjYwNjI2Y2JhZGE",
+        name:"Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+        price:"$83",
+        para:" Exfoliates away dead skin cells for smoother, vibrant-looking skin after just one use.    ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/brow-defining-boost-light-ENEBS01.jpg?context=bWFzdGVyfGltYWdlc3wyMTU3OXxpbWFnZS9qcGVnfGltYWdlcy9oODgvaDYzLzEzODE0NjU1MDU3OTUwLmpwZ3xjM2M3NGZiODY4OThkOWYxYzRmYTgyYzUzNTFiNDA2NmY1NmFkMGM1YzcyNmFiZWJhMmRjNGIzMWI1NTJiZjc1",
+        name:"Brow Defining Boost",
+        price:"$112",
+        para:" Brow Defining Boost   ",
+        rating:"★★★★★  4.5 (602) ",
+        button:"ADD TO BAG" 
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+        name:"REDEFINE Multi-Function Eye Cream",
+        price:"$70",
+        para:"Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.   ",
+        rating:"★★★★★  4.6 (8348) ",
+        button:"ADD TO BAG ",
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+        name:"REDEFINE Regimen",
+        price:"$220",
+        para:"Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.   ",
+        rating:"★★★★★  4.6 (8348) ",
+        button:"ADD TO BAG" 
+    },
+
+
+
+
+
+]
+
+img.map(function (elem, index, array) {
+
+var div = document.createElement("div");
+var img = document.createElement("img");
+img.setAttribute("src", elem.imgUrl);
+img.setAttribute("id","img208")
+
+var name = document.createElement("h4");
+name.innerText = elem.name;
+name.setAttribute("id","style1208")
+
+var role = document.createElement("p");
+role.innerText = elem.price; 
+role.setAttribute("id","style2208")
+
+var role1 = document.createElement("p");
+role1.innerText = elem.para;
+role1.setAttribute("id","style3208")
+
+var role2 = document.createElement("p");
+role2.innerText = elem.rating;
+role2.setAttribute("id","style4208")
+
+
+var button=document.createElement("button");
+button.innerText=elem.button;
+
+
+button.setAttribute("id","button208")
+
+
+
+    div.append(img, name, role1,role,role2,button);
+    document.querySelector("#container208").append(div);
+  });
+</script>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+       #container211 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 400px);
+        width: 78%;
+        margin: auto;
+   
+        /* border: 1px solid red; */
+       font-family: sans-serif;
+      
+      }
+      #button211{
+          /* width: 290px; */
+          /* height: 50px; */
+          padding: 11px 76px;
+          border: solid black 1px;
+          font-size: 13px;
+          margin-top: 10px;
+          margin-left: 15px;
+          margin-left: 35px;
+          background-color: white;
+          
+      }
+      #img211{
+          /* display: flex; */
+         height: 240px;
+         width: 260px;
+         padding-bottom: 5px;
+         margin-left: 18px;
+         
+        
+          
+      }
+      #style1211{ 
+        overflow: hidden;
+          text-align: center;
+          font-size: 14.3px;
+          font-weight:400;
+          margin: auto;
+          margin-bottom: 21px;
+          font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+          /* margin-left: -40px; */
+          padding-bottom: 5px;
+      }
+      #style2211{
+          text-align: center;
+          /* margin: auto; */
+          /* justify-content: center; */
+          margin-top: 50px;
+       
+          font-size: 13px;
+          /* font-weight:0; */
+          display: inline;
+          
+          margin-left: 50px;
+          margin-bottom: 5px;
+          color: rgb(141, 140, 140);
+          
+      }
+      #style3211{
+          display: inline;
+          text-align: center;
+          font-size: 13px;
+          color: rgb(141, 140, 140);
+          margin-left: 10px;
+  
+          
+      }
+      #style4211{
+          color: rgb(118, 205, 255);
+          display: inline;
+          font-size: 11.8px;
+          font-weight: bold;
+          margin-left: 4px;
+      }
+
+      #h2211{
+          text-align: center;
+          font-size: 27px;
+          font-weight: 500;
+        
+      }
+       #para211{
+         text-align: justify;
+         text-align: center; 
+      } 
+      #ram211{
+          width: 50%;
+          text-align: center;
+          margin: auto;
+          font-family: sans-serif;
+          font-size: 14px;
+          color: gray;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+   <h1 id="h2211">ESSENTIALS</h1>
+  
+     
+    <div id="ram211">
+        <p id="para211">Our everyday dermatologic necessities for healthy-looking skin.</p>
+       </div>
+        <div id="container211">
+    </div>
+  </body>
+</html>
+
+<script>
+
+    var img = [
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ESFB150-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxODk0N3xpbWFnZS9qcGVnfGltYWdlcy9oZGYvaDRkLzEwMjkxODI5Mzc1MDA2LmpwZ3xhYWFjOGQwMDNmZjYyNTliYWQwYjFhZDI5MmMzMTBiZDg1Y2U1NDBiZjg0ZDk3M2U1ZTVjNzU4ZTI0YzlkNWU1",
+        name:"ESSENTIALS Face + Body Sunscreen Broad Spectrum SPF 50",
+        price:"$34.00 |",
+        strikedOffPrice:"$30.00 with",
+        pc: "PC PERKS",
+        button:"SHOP NOW "
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ESMRW01-cat.jpg?context=bWFzdGVyfHJvb3R8MTcyMDN8aW1hZ2UvanBlZ3xoNDQvaGIzLzg4MjE4NDUwNjU3NTguanBnfDgwYzE1YTgyMTE1MjkzMDVlZjVkMGU5MjVjODUzMDVhOTFjY2Y1YmMwNjZhOTZmZDI1NzQ1N2JlMWEwNGRkZGQ",
+        name:"ESSENTIALS Instant Makeup Remover Wipes",
+        price:"$32.00 |",
+        strikedOffPrice:"$28.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ESMRB01-720x600-Desktop-1-.jpg?context=bWFzdGVyfGltYWdlc3w0MTM2OHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDMxLzE0MDMyNzUyNTc0NDk0LmpwZ3w5OTBlOTQ0ZDA5MjhhMzJiZDc3NWI4MGQ4Zjc3ZGVmYmJmM2M0YmU5MDkxNTc5NmMzOTJiNjBiMzEwZDZhOTc1",
+        name:"ESSENTIALS Complete Eye Makeup Remover",
+        price:"$32.00 |",
+        strikedOffPrice:"$28.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ESBL200-cat.jpg?context=bWFzdGVyfGltYWdlc3wyMjg3NHxpbWFnZS9qcGVnfGltYWdlcy9oZTYvaDJhLzg4MjE4NDQ4NjkxNTAuanBnfGQ2M2NlOTA4ZWU1ODZjZjkyNDQwZTNhN2VhM2FjM2E1MmZjMjI3YWEyMjkzYmRmZDQ5ZGM2OGJlMWI4MjJjYTA",
+        name:"ESSENTIALS Daily Body Moisturizer",
+        price:"$27.00  |" ,
+        strikedOffPrice:"$24.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ESST125-cat.jpg?context=bWFzdGVyfGltYWdlc3wxNzI1OXxpbWFnZS9qcGVnfGltYWdlcy9oZTEvaDc4Lzg4MjE4NDUxMzEyOTQuanBnfGY1ODM0ODUzMDI0ZTM4Yjg1NDI4ODJmODQ1YTg3MDQ3N2RkOGEyNWM3MmFhMzljM2I0MzA4Y2I5NGVkMjE0NjA",
+        name:"ESSENTIALS Foaming Sunless Tan",
+        price:"$27.00 |",
+        strikedOffPrice:"$24.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    }
+    ,
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ESLS002-cat.jpg?context=bWFzdGVyfGltYWdlc3wzNjk5NHxpbWFnZS9qcGVnfGltYWdlcy9oMzUvaDRlLzg4MjE4NDQ5Njc0NTQuanBnfGQ5M2Q2OWZjNDEzM2Q4MTMwYTc5N2M3MThhYzdiODVjYTMzZjY2N2Y3MWVjYTNlZWNmNmRlMmEzMGNmNDlhY2Q",
+        name:"ESSENTIALS Lip Shield SPF 25 (Two-Pack)",
+        price:"$19.00 |",
+        strikedOffPrice:"$17.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ESGA001-720x600-Desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w2NTQwN3xpbWFnZS9qcGVnfGltYWdlcy9oNDMvaGMxLzEzNjcwOTE5ODY0MzUwLmpwZ3w1NzExNGMwYzdlMWZkODUxNmY3NWI4MWE4OTVmODkwODY4NWQyMWViZjg3YTU4NTU0YjcyYWRhNDQwMTA0NTdj",
+        name:"ESSENTIALS Gauze Pads",
+        price:"$11.00 |",
+        strikedOffPrice:"$10.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/ESMD010-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NDM4MXxpbWFnZS9qcGVnfGltYWdlcy9oNmQvaGY0LzEyODg5MTg2MjM4NDk0LmpwZ3w4OGE2OGI5MzM5MzIwMWFjZmZmYTIwMDBkNDg0ZDVkZTFlOTVhMDg4NjQ1NzdlMjFjY2MzNTRiY2U5ODc2YjBh",
+        name:"ESSENTIALS Maximum D3 Vitamin D Supplement",
+        price:"$27.00 |",
+        strikedOffPrice:"$23.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    }
+
+
+
+]
+
+img.map(function (elem, index, array) {
+
+var div = document.createElement("div");
+var img = document.createElement("img");
+img.setAttribute("src", elem.imgUrl);
+img.setAttribute("id","img211")
+
+var name = document.createElement("h4");
+name.innerText = elem.name;
+name.setAttribute("id","style1211")
+
+var role = document.createElement("p");
+role.innerText = elem.price; 
+role.setAttribute("id","style2211")
+
+var role1 = document.createElement("p");
+role1.innerText = elem.strikedOffPrice;
+role1.setAttribute("id","style3211")
+
+var role2 = document.createElement("p");
+role2.innerText = elem.pc;
+role2.setAttribute("id","style4211")
+
+
+var button=document.createElement("button");
+button.innerText=elem.button;
+
+
+button.setAttribute("id","button211")
+
+
+
+    div.append(img, name, role, role1,role2,button);
+    document.querySelector("#container211").append(div);
+  });
+</script>

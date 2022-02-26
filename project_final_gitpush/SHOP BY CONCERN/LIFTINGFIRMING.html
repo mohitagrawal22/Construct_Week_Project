@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+       #container204 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 400px);
+        width: 78%;
+        margin: auto;
+   
+        /* border: 1px solid red; */
+       font-family: sans-serif;
+      
+      }
+      #button204{
+          /* width: 290px; */
+          /* height: 50px; */
+          padding: 11px 76px;
+          border: solid black 1px;
+          font-size: 13px;
+          margin-top: 10px;
+          margin-left: 15px;
+          margin-left: 35px;
+          background-color: white;
+          
+      }
+      #img204{
+          /* display: flex; */
+         height: 240px;
+         padding-bottom: 5px;
+         margin-left: 18px;
+         
+        
+          
+      }
+      #style1204{ 
+        overflow: hidden;
+          text-align: center;
+          font-size: 14.3px;
+          font-weight:400;
+          margin: auto;
+          margin-bottom: 21px;
+          font-family: HCoGothamSSmRegular,Arial,Sans-Serif;
+          /* margin-left: -40px; */
+          padding-bottom: 5px;
+      }
+      #style2204{
+          text-align: center;
+          /* margin: auto; */
+          /* justify-content: center; */
+          margin-top: 50px;
+       
+          font-size: 13px;
+          /* font-weight:0; */
+          display: inline;
+          
+          margin-left: 50px;
+          margin-bottom: 5px;
+          color: rgb(141, 140, 140);
+          
+      }
+      #style3204{
+          display: inline;
+          text-align: center;
+          font-size: 13px;
+          color: rgb(141, 140, 140);
+          margin-left: 10px;
+  
+          
+      }
+      #style4204{
+          color: rgb(118, 205, 255);
+          display: inline;
+          font-size: 11.8px;
+          font-weight: bold;
+          margin-left: 4px;
+      }
+
+      #h2204{
+          text-align: center;
+          font-size: 27px;
+          font-weight: 500;
+        
+      }
+       #para204{
+         text-align: justify;
+         text-align: center; 
+      } 
+      #ram204{
+          width: 50%;
+          text-align: center;
+          margin: auto;
+          font-family: sans-serif;
+          font-size: 14px;
+          color: gray;
+      }
+      
+      
+
+      
+    </style>
+  </head>
+  <body>
+
+   <h1 id="h2204">LIFTING & FIRMING</h1>
+  
+     
+    <div id="ram204">
+        <p id="para204">As we age, some of our skin’s natural processes slow down and skin loses elasticity. Our targeted products help visibly firm, plump and refresh skin.</p>
+       </div>
+        <div id="container204">
+    </div>
+  </body>
+</html>
+
+<script>
+
+    var img = [
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+        name:"REDEFINE Regimen",
+        price:"$220.00 |",
+        strikedOffPrice:"$197.00 with",
+        pc: "PC PERKS",
+        button:"SHOP NOW "
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+        name:"REDEFINE Multi-Function Eye Cream",
+        price:"$70.00 |",
+        strikedOffPrice:"$63.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },{
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAAPS01-Regimen-Explainer-AMP-MD-System-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODcyNnxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oNDEvMTQ2MDQwOTQ0MDY2ODYucG5nfGYyNGNkZTQ1ODc2Zjg3OGYzMjZjNDFmMTI4NTdmNzNkOWM0MmIzZTZhMzRkMDE0OTMwNjRkOTZiMDdiZTYyMjk",
+        name:"REDEFINE AMP MD System",
+        price:"$227.00 |",
+        strikedOffPrice:"$204.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AARMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTUyMTd8aW1hZ2UvanBlZ3xoYTUvaDliLzEzNjE1MDM2MTcwMjcwLmpwZ3xhM2U4ZGUyYzhhOGNhOTBiM2I0NjE4YjU1MTM5MjUwMGVhOTJhZjdlNzcwOTU2NmEwMDEwZjNmNmEyNDc1OGUz",
+        name:"REDEFINE Rejuvenation Mask",
+        price:"$60.00  |" ,
+        strikedOffPrice:"$54.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/IRS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3w0NzYwNXxpbWFnZS9wbmd8aW1hZ2VzL2gzMy9oMmIvMTM3NTgzODU3MTcyNzgucG5nfDU3MDNlODNlMjk0MDZiYWEwODU1NTZhMDg3NDBkNTU4M2EwNGJiY2M1OTZmN2RlMWNlM2UwYmEyZDg5YzViNDM",
+        name:"REDEFINE Intensive Renewing Serum",
+        price:"$102.00 |",
+        strikedOffPrice:"$91.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    }
+    ,
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWA125-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTg1OTR8aW1hZ2UvanBlZ3xpbWFnZXMvaGYxL2g1Mi8xMTg1NDA1NTI3NjU3NC5qcGd8NDQ5MmQ3MGJmNzYyY2U4ZGQzNWRmYjJhZWM1ZGMwY2FlMGRiMGY3NmNhMjBjOGI1OTYwNzdiNDY2MmViMTVhZA",
+        name:"REDEFINE Daily Clay Cleanser",
+        price:"$45.00 |",
+        strikedOffPrice:"$40.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAWF125-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTg2NjZ8aW1hZ2UvanBlZ3xpbWFnZXMvaGFjL2hiOC8xMTg1NDA1NjkxNDk3NC5qcGd8MDhiNGM0ZDJmMTliNzhmYjk0ZDJmYzQ4YjhhM2E2YjU2NGE1YzRjZTExNjJmYzU3ZjFmNTc3MmE3N2UyNTMwNw",
+        name:"REDEFINE Daily Foaming Cleanser",
+        price:"$45.00 |",
+        strikedOffPrice:"$40.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AATN125-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTk1ODd8aW1hZ2UvanBlZ3xpbWFnZXMvaGFkL2hmMi8xMTg1NDA1MzMxMDQ5NC5qcGd8Njg0OTgyMDU0NGI3MDhkNDY5OWZmMWI2YTYxMTg3OWZhODM5NTk3MTBjNTVlOTdiMTQ4YWE4ZmUzMWZkZDg4OA",
+        name:"REDEFINE Pore Refining Toner",
+        price:"$50.00 |",
+        strikedOffPrice:"$45.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+
+
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AATT030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wyMDczNjR8aW1hZ2UvanBlZ3xpbWFnZXMvaGIyL2gyMS8xMTg1NDA1NDM5MTgzOC5qcGd8MjZkNzAxMTI1YTBiMjgzZjNmMTIyMjA0NWE1ZTFmZjcyZDNjY2Y1OTU2MjNmNjY5ZDEyNGMwNzM4OTU3MDEyNw",
+        name:"REDEFINE Triple Defense Cream Broad Spectrum SPF 30",
+        price:"$90.00 |",
+        strikedOffPrice:"$81.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AATL030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTY3MDB8aW1hZ2UvanBlZ3xpbWFnZXMvaDg2L2g4Yi8xMTg1NDA1MjI2MTkxOC5qcGd8ZmNlMmFlNjExNTQxNmFlYWM0OGI2Nzc1NmFjMTUyYmUyN2NlN2IyY2M4MDEyM2Q2MzNiZjdmMmJiYmNiMjBmMQ",
+        name:"REDEFINE Triple Defense Lotion Broad Spectrum",
+        price:"$90.00 |",
+        strikedOffPrice:"$81.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAPM030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTIzODl8aW1hZ2UvanBlZ3xpbWFnZXMvaDEzL2g4Ni8xMTg1NDA1MTYwNjU1OC5qcGd8MmM0ZmI0YjBlOGU4NzBiM2QzMGVjMDhhNGZkZGI0MTQzYzgxZDhiNTA3MzgyYzIzYzVjNmE0MTBjYzFmNjQ1Mw",
+        name:"REDEFINE Overnight Restorative Cream",
+        price:"$90.00 |",
+        strikedOffPrice:"$81.00 with",
+        pc: "PC PERKS",
+        button:"ADD TO BAG "
+    },
+
+    {
+        imgUrl:"https://www.rodanandfields.com/en-us/medias/AAPL030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTk1NjF8aW1hZ2UvanBlZ3xpbWFnZXMvaDkxL2hjZi8xMTg1NDA1MDYyMzUxOC5qcGd8NGJkY2YyMzM0Y2MzMmYyNjQ3ODQ0ZjhhNDgxMmZkYmFjNDgzNGI5YjcyYmY3YjM1MjkwODBjYmVkOTBjMzhlMw",
+        name:"REDEFINE Overnight Reparative Lotion",
+        price:"$90.00 |",
+        strikedOffPrice:"$81.00 with",
+        pc: "PC PERKS",
+        button:"SHOP NOW "
+    },
+
+
+
+
+
+
+
+]
+
+img.map(function (elem, index, array) {
+
+var div = document.createElement("div");
+var img = document.createElement("img");
+img.setAttribute("src", elem.imgUrl);
+img.setAttribute("id","img204")
+
+var name = document.createElement("h4");
+name.innerText = elem.name;
+name.setAttribute("id","style1204")
+
+var role = document.createElement("p");
+role.innerText = elem.price; 
+role.setAttribute("id","style2204")
+
+var role1 = document.createElement("p");
+role1.innerText = elem.strikedOffPrice;
+role1.setAttribute("id","style3204")
+
+var role2 = document.createElement("p");
+role2.innerText = elem.pc;
+role2.setAttribute("id","style4204")
+
+
+var button=document.createElement("button");
+button.innerText=elem.button;
+
+
+button.setAttribute("id","button204")
+
+
+
+    div.append(img, name, role, role1,role2,button);
+    document.querySelector("#container204").append(div);
+  });
+</script>
