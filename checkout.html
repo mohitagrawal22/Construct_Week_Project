@@ -8,7 +8,78 @@
 </head>
 <body>
     <h1 style="text-align: center;">CHECKOUT</h1>
-    <p id="total"></p>
+    <!-- <p id="total"></p> -->
+
+    <div style="height:350px; width:300px; border:1px solid black;text-align:center;margin-left:530px;margin-top:50px;">
+
+        <div style="background-color:rgba(242, 244, 246, 0.678); padding:10px;">ORDER SUMMARY</div>
+        
+
+        <table style="margin-left:15px;margin-top:10px;">
+            <tr>
+                <td >SUBTOTAL</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><p id="total"></p></td>
+            </tr>
+            <tr>
+                <td>PROMO</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><p id="promo">0</p></td>
+                
+            </tr>
+        </table>
+    <hr>
+
+        <table style="margin-left:15px;margin-top:10px;">
+        
+            
+            <tr>
+                <td>ESTIMATED TOTAL</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><p id="Etotal"></p></td>
+            </tr>
+        </table>
+        
+
+        <input type="text" placeholder=" Enter Promo">
+        <button onclick="promo()">APPLY</button>
+
+
+
+        <!-- <button style="height:30px;width:200px;background-color:black;color:white;padding:8px;text-align:center;border-radius:5px;margin-top:20px;cursor:pointer;">
+            SECURE CHECKOUT
+        </button> -->
+        <button onclick="window.location.href='final.html'" style="margin-top: 20px; background-color: black; color: white; padding: 6px 15px;">secure checkout</button>
+
+    </div>
+
 
 </body>
 
@@ -16,4 +87,16 @@
 <script>
 var a=JSON.parse(localStorage.getItem("total")) || [];
 document.getElementById("total").innerText=a;
+document.getElementById("Etotal").innerText=a;
+function promo()
+{
+
+    var promo= a*(0.1);
+    document.getElementById("promo").innerText=promo;
+
+    document.getElementById("Etotal").innerText=a-promo;
+
+
+}
+
 </script>
