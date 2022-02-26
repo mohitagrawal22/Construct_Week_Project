@@ -2,52 +2,52 @@ data=[
     {image:"https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
 url:"https://www.rodanandfields.com/en-us/shop/redefine-regimen/p/HAAGR",
 text:"REDEFINE Regimen ",
-price:"$220.00 |  $197.00"
+price:"220"
 },
 {
     image:"https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY",
     url:"https://www.rodanandfields.com/en-us/shop/total-rf-serum/p/ENFM030",
     text:"Total RF Serum ",
-    price:"$175.00 |  $157.00 "
+    price:"1750"
 },
 {
     image:"https://www.rodanandfields.com/en-us/medias/ENHLSH01-Regimen-Explainer-R-F-Lash-Boost-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxMDc0OHxpbWFnZS9wbmd8aW1hZ2VzL2hmMS9oYWMvMTQ1MzIwNDI1ODgxOTAucG5nfDQyNTQ0OGUzYmMwZTJkM2YzNzE1MjE2NzQ1M2YxMWQ5M2E3ZWQ2MjAwMDA3MzFmNjQyOWUwNDU3OWZmMTkzZDY",
     url:"https://www.rodanandfields.com/en-us/shop/r-f-lash-boost/p/ENHLSH01",
     text:" R + F Lash Boost ",
-    price:" $155.00 |  $139.00"
+    price:" 1550"
 },
 {
     image:"https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh"
     ,
     url:"https://www.rodanandfields.com/en-us/shop/active-hydration-bright-eye-complex/p/ENHEY15",
     text:"Active Hydration Bright Eye",
-    price:"$72.00 |  $64.00 "
+    price:"7200"
 },
 
 {
 image:"https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA",
 url:"https://www.rodanandfields.com/en-us/shop/redefine-multi-function-eye-cream/p/AAEY015",
 text:" REDEFINE Multi-Function Eye Cream ",
-price:"$112.00 |  $100.00 "
+price:"1120"
 },
 
   {  image:"https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
     url:"https://www.rodanandfields.com/en-us/shop/redefine-multi-function-eye-cream/p/AAEY015",
     text:" REDEFINE Multi-Function Eye Cream ",
-    price:"$70.00 |  $63.00 "
+    price:"7000"
 },
 
 {
     image:"https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5",
     url:"https://www.rodanandfields.com/en-us/shop/rodan-fields-active-hydration-body-replenish/p/ENBR001",
     text:" Rodan + Fields Active Hydration Body Replenish ",
-    price:"$66.00 |  $59.00"
+    price:"6600"
 },
 {
     image:"https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2gyNi9oZjgvMTQ1MzIxNjc2MzA4NzgucG5nfGM0YTc0NjM0YWIzM2QxZDZlOTc0NTdmYjA4M2EyNDA5NGJhODg3ZDQwMGJjZjdiMTZlYTI2MjYwNjI2Y2JhZGE",
     url:" https://www.rodanandfields.com/en-us/shop/rodan-fields-enhancements-micro-dermabrasion-paste/p/ENPS125",
     text:"Rodan + Fields Enhancements Micro-Dermabrasion Paste ",
-    price:"$83.00 |  $74.00 "
+    price:"8300"
 
 },
 // {
@@ -81,6 +81,10 @@ price:"$134.00 |  $120.00 "
 
 },
 ]
+displaydata(data);
+var cartArr=JSON.parse(localStorage.getItem("cartDetails")) || [];
+function displaydata(data){
+    document.querySelector("#data").innerHTML="";
 data.map(function(elem){
     var div=document.createElement("div");
     var avatar=document.createElement("img");
@@ -94,13 +98,26 @@ data.map(function(elem){
     price.innerText=elem.price;
     price.setAttribute("id","price");
     var button=document.createElement("button");
-    button.innerText="ADD TO BAG";
+    button.innerText="ADD TO cart";
     button.setAttribute("id","button")
+    button.addEventListener("click",function(){
+        addtocart(elem);
+    })
+
 
     div.append(avatar,link,price,button);
     document.querySelector("#data").append(div);
 
 })
+function addtocart(elem){
+    console.log(elem);
+    cartArr.push(elem);
+    elem.quant=1;
+    console.log(cartArr)
+    localStorage.setItem("cartDetails",JSON.stringify(cartArr));
+}
+
+}
 
 
 
